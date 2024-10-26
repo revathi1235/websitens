@@ -1,0 +1,1541 @@
+
+@font-face{
+  font-family: 'Good Times';
+  src: url('../../public/fonts/good\ times\ rg.otf') format('opentype');
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Pirulen';
+  src: url('../../public//fonts/pirulen\ rg.otf') format('opentype');
+  /* Add additional font formats if necessary */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../../public/fonts/Montserrat-Bold.ttf') format('opentype');
+  /* Add additional font formats if necessary */
+  font-style: normal;
+}
+
+
+.logo-heading {
+    background: linear-gradient(90deg, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    padding: 20px;
+  }
+  .logo-heading h3{
+    margin-left: 0px;
+  }
+  .common-nav{
+
+    font-family: "Montserrat-Bold",sans-serif;
+
+    font-family: Montserrat, sans-serif;
+
+    font-size: 3rem;
+    min-height: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+
+  .text-container {
+    text-align: justify;
+    margin-top: 130px;
+
+  }
+  
+  .highlight-text {
+    font-family:  Helvetica ;
+    font-size: 1.5rem;
+    color: #0f0f0f; /* Green color for emphasis */
+    font-weight: bold;
+    display: block;
+  }
+  
+  .main-title {
+    font-size: 48px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+    background-clip: text; /* For other browsers */
+  }
+  
+  
+  .subheading {
+    font-size: 1.25rem;
+    color: #0d0d0e; /* Greyish color for subtle emphasis */
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .cta {
+    font-size: 1.1rem;
+    font-family: "Good Times";
+    color: #111111; /* Red color for the call-to-action */
+    font-weight: 600;
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .primary-heading {
+    margin-top: 50px;
+    padding-right: 20px;
+   
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the element */
+    background-position: center; /* Centers the background image */
+    animation: bgChange 10s infinite ease-in-out; /* Extended duration for smoother transition */
+    transition: background-image 2s ease-in-out, opacity 2s ease-in-out; /* Smooth transition for background image and opacity */
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url('../Assets/combainedbg.png');
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+    }
+    34% {
+        opacity: 1; /* Fade out */
+    }
+    50% {
+        background-image: url('../Assets/combainedimg2.png');
+        opacity: 1;
+    }
+    67% {
+        opacity: 1; /* Fade in */
+    }
+    68% {
+        background-image: url('../Assets/combainedimg3.png');
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        background-image: url('../Assets/combainedbg.png');
+    }
+}
+  
+  .primary-heading{
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the element */
+    background-position: center; /* Centers the background image */
+ }
+  
+ 
+
+ .headingStyle{
+  font-size: 30px;
+  font-family: 'Pirulen';
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
+}
+.headingStyle-Apora{
+  font-size: 30px;
+  font-family: 'Pirulen';
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
+}
+.aporahomepage-image {
+  width: 100%;
+      height: 50vh;
+  border-radius: 40px 40px; /* Rounded corners */
+  margin-top: 10px;
+  /* Shadow/Projection effect */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* White shadow */
+}
+
+  .icon-overlay {
+    position: absolute;
+    top: 10px; /* Adjust this to position the icon vertically */
+    left: 490px; /* Adjust this to position the icon horizontally */
+    background-color: white; /* White background for the icon */
+    border-radius: 50%; /* Optional: make the background circular */
+    padding: 10px; /* Space around the icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+  }
+  .icon-overlay-second {
+    position: absolute;
+    top: 280px;
+    left: 210px;
+    background-color: rgb(243, 242, 242); /* White background for the icon */
+    border-radius: 50%; /* Optional: make the background circular */
+    padding: 10px; /* Space around the icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+  }
+  
+  .graph-icon {
+    color: #000; /* Color of the icon */
+    font-size: 24px; /* Size of the icon */
+    
+  }
+  
+
+
+
+  @media screen and (max-width: 768px) {
+    .homepage-image {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 150px;
+      height: 25vh;
+    }
+  
+    .main-title {
+      font-size: 36px;
+    }
+  
+    .primary-heading {
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .icon-overlay {
+      left: 300px;
+    }
+  
+    .icon-overlay-second {
+      top: 240px;
+      left: 150px;
+    }
+    .toggle-btn{
+      margin-top: -7px;
+    margin-right: 130px;
+      
+    }
+    .toggle-btn-background-setting{
+      background-color: #e1e1e1;
+      z-index: 99;
+      border-radius: 30px;
+    }
+    .text-container {
+      text-align: justify;
+      margin-top: 30px;
+      width: 200px;
+  
+    }
+    .cta{
+      font-size: 14px;
+      
+    }
+    
+  }
+  
+  /* Media query for mobile phones */
+  @media screen and (max-width: 480px) {
+    .logo-heading {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    .homepage-image {
+      width: 115%;
+      margin-top: 30px;
+      height: 20vh;
+    }
+  
+    .main-title {
+      font-size: 28px;
+    }
+  
+    .subheading {
+      font-size: 1rem;
+      
+    }
+  
+    .primary-heading {
+      width: 108%;
+      height: 50vh;
+     
+    }
+  
+    .icon-overlay {
+      left: 200px;
+      top: 5px;
+    }
+  
+    .icon-overlay-second {
+      top: 200px;
+      left: 100px;
+    }
+
+  }
+.dropdown-container {
+    width: 100%; /* Full width */
+    height: 300px; /* Height of the dropdown */
+    background-color: #f8f9fa; /* Background color */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: -10px;
+    text-align: justify;
+   
+    position: relative; /* z-index will work properly now */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a raised effect */
+}
+  
+
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 500px;
+ text-align: justify;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 500px;
+ text-align: justify;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2:hover .dropbtn2 {background-color: #3e8e41;}
+
+.sub-dropdown-content{
+  background-color: #696666;
+
+  border-radius: 10px;
+}
+.sub-dropdown-content a{
+  color: white;
+}
+.sub-dropdown-content a:hover{
+  color: rgb(7, 7, 7);
+}
+
+
+
+.integrationimage{
+  height:280px;
+  width: 150%;
+  margin-left: 170px;
+  margin-top:80px;
+  border-radius: 20px 20px;
+  border-left: 10px solid rgb(1, 2, 1);
+  
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* For Tablets (screens between 768px and 1024px) */
+@media only screen and (max-width: 1024px) {
+  .integrationimage {
+    height: 180px;  /* Adjust height */
+    width: 120%;    /* Adjust width for better fit */
+    margin-left: 50px;
+    margin-top: 120px;  /* Reduce margin for smaller screens */
+    border-radius: 15px;
+  }
+}
+
+/* For Mobile Devices (screens below 768px) */
+@media only screen and (max-width: 768px) {
+  .integrationimage {
+    height: 150px;  /* Reduce height further for smaller mobile screens */
+    width: 100%;    /* Adjust width to fit properly */
+    margin-left: 20px;
+    margin-top: 50px;  /* Further reduce margin for mobile view */
+    border-radius: 12px;
+  }
+ 
+}
+
+/* For Extra Small Mobile Devices (screens below 480px) */
+@media only screen and (max-width: 480px) {
+  .integrationimage {
+    height: 130px;  /* Further reduce the height */
+    width: 100%;    /* Full width for mobile */
+    margin-left: 10px; 
+    margin-top: 30px;  /* Minimal margin on very small screens */
+    border-radius: 10px;
+  }
+  
+}
+
+
+/* .next-btn{
+   cursor: pointer; font-size: 24px;
+   margin-left: 150px;
+} */
+
+
+.first-content{
+  height:70vh;
+
+  margin-top: 83px;
+}
+@media(max-width:768px){
+  .first-content{
+    margin-top: 150px;
+
+  margin-top:130px;
+}
+}
+@media(max-width:768px){
+  .first-content{
+    margin-top: 130px;
+  }
+}
+
+.backgroundimg-deconsolidation{
+  background-image: url('../../public/Assets/Grey\ BG\ Dark.png');
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundimg-apora{
+  background-image: url('../../public/Assets/best\ blue.jpg');
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.AporaHomepage-image{
+
+    width: 100%;
+    height: 50vh;
+    border-radius: 30px 30px;
+    margin-top: 10px;
+    padding: 20px;
+   
+
+}
+
+.block-list-AporaHomepage-ul {
+  display: block; /* Ensures each item is on a new line */
+  text-align: justify; /* Justifies the text */
+  padding: 0; /* Reset default padding */
+ 
+  margin: 0; /* Reset default margin */
+  list-style-type: none; /* Remove default list styling */
+}
+
+.block-list-AporaHomepage-ul li {
+  width: 100%;
+  margin-bottom: 10px; /* Space between list items */
+  padding: 10px; /* Add padding to each list item */
+  border-left: 5px solid; /* Add a left border */
+  border-image: linear-gradient(to bottom, green, blue) 1; /* Linear gradient for the border */
+
+}
+
+
+@media(max-width:768px){
+  /* .AporaHomepage{
+    margin-top: 200px;
+  } */
+  .AporaHomepage-image{
+    width: 100%;
+    height: 50vh;
+    border-radius: 40px 100px;
+    margin-top: 67px;
+    padding: 20px;
+  }
+  .common-nav-fix{
+    max-height: 93px;
+    background:#e1e1e1,
+  }
+  .bg-mob-view{
+    background-color: #e1e1e1;
+  }
+}
+.common-nav-fix{
+  position:sticky;
+  top:0;
+  z-index:999;
+ background:white;
+   /* box-shadow: 3px 3px 10px lightslategray; */
+ 
+}
+
+button {
+  margin: 20px;
+}
+@media(max-width:991px){
+  .nav-top-custom-btn .custom-btn{
+display: none;
+  }
+  .hiding-btn{
+    display: none;
+  }
+
+
+}
+
+@media(min-width:992px){
+
+  .main-custom-btn-div .custom-btn{
+display: none;
+  }
+
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  /* padding: 10px; */
+  margin: 5px 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+.font-highlight-deconsol{
+  font-size:30px;
+  text-align:justify;
+  font-weight: 500;
+   
+}
+
+/* 5 */.btn-5 {
+  position: relative; /* Ensure the button has a relative position */
+ 
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: linear-gradient(to left, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+  /* overflow: hidden;  */
+  color: white; 
+  font-weight: bold; /* Make text bold */
+}
+
+.btn-5:before,
+.btn-5:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%; /* Set width to 100% to cover the button */
+  background: #3b09f0;
+  transition: transform 0.4s ease; /* Transition effect for transform */
+  animation: borderAnimation 2.5s infinite; /* Start the border animation */
+}
+
+.btn-5:before {
+  top: 0;
+  left: 0;
+  transform: translateY(-100%); /* Move upward initially */
+}
+
+.btn-5:after {
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%); /* Move downward initially */
+}
+
+/* Keyframes for continuous animation */
+@keyframes borderAnimation {
+  0% {
+    transform: translateY(-100%); /* Start from above */
+  }
+  50% {
+    transform: translateY(0); /* Move to position */
+  }
+  100% {
+    transform: translateY(100%); /* Move below */
+  }
+}
+
+.btn-5:hover {
+  background: transparent; /* Change background on hover */
+  color: #127720; /* Change text color on hover */
+  box-shadow: none; /* Remove shadow on hover */
+}
+
+
+
+/* -------------industries serve css-------------------- */
+.IndustriesServe-heading {
+  padding: 50px;
+  font-size: 30px; 
+  /* font-family: 'pirulen'; */
+  text-align: center; /* Center align the heading */
+ color: black;
+   
+}
+
+
+@media(max-width:768px){
+  .IndustriesServe-heading{
+  font-size: 20px;
+  }
+  .IndustriesServe-page{
+    margin-top: 150px;
+  }
+
+  }
+  .image-container {
+    display: flex; /* Use flexbox to arrange items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space items evenly */
+    margin: -10px; /* Adjust margin to control spacing */
+    
+  }
+
+  .image-item {
+    flex: 1 1 calc(20% - 20px); /* Each item takes up 20% width minus gap */
+    margin: 10px; /* Space between items */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding around the content */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px; /* Optional: add rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image-item img {
+    width: 60%; /* Ensure the image fills the item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners to images */
+    transition: transform 0.3s ease;
+  }
+  .image-item:hover img {
+    transform: scale(1.05); /* Slightly increase the size of the image on hover */
+  }
+
+  .image-item span {
+    display: block; /* Ensures the text occupies its own line */
+    margin-top: 8px; /* Space between image and text */
+  }
+  @media (max-width: 768px) {
+    .image-item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row on tablet */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      flex: 1 1 100%; /* 1 item per row on mobile */
+    }
+  }
+
+
+  .deconsolidation-img{
+  
+      width: 100%;
+      height: 50vh;
+      border-radius: 40px 40px;
+      margin-top: 10px;
+      padding: 20px;
+     
+ 
+  }
+  @media(max-width:768px){
+    
+  .deconsolidation-img{
+  
+    width: 100%;
+    height: 34vh;
+    border-radius: 40px 100px;
+    margin-top: 10px;
+    padding: 20px;
+   
+
+}
+  }
+
+  .deconsolidation-paragraph{
+    font-size: 20px;
+  }
+
+
+
+
+
+  .block-list-deconsolidation {
+    color: rgb(5, 5, 5);
+    display: block; /* Ensures each item is on a new line */
+    text-align: justify; /* Justifies the text */
+    padding: 0; /* Reset default padding */
+    margin: 0; /* Reset default margin */
+    list-style-type: none; /* Remove default list styling */
+    cursor: pointer;
+  }
+  
+  .block-list-deconsolidation li {
+    width: 100%;
+    margin-bottom: 10px; /* Space between list items */
+    padding: 10px; /* Add padding to each list item */
+    border-left: 5px solid; /* Add a left border */
+    border-image: linear-gradient(to bottom, green, blue) 1; /* Linear gradient for the border */
+   
+  }
+  .selected-item-deconsolidation {
+    border: 2px solid blue;
+    color: rgb(3, 3, 3);
+    letter-spacing: 3px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+.fix-dropdown-height{
+  margin-top: -7px;
+  font-size: 14px;
+}
+  /* -------------------------------about us  */
+  .aboutpage-starting {
+    height: 35vh;
+    width: 100%;
+    background-image: url('../Assets/Grey BG Dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 40px;
+    /* Centerng the text vertically and horizontally */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /*  Center items vertically */
+  }
+  @media(max-width:2000px) and (min-width:320px){
+  .gradient-text {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: 'Good Times';
+  }
+  .aboutpage-subtitle{
+    padding: 30px;
+    font-size: 300;
+    font-family: 'good times';
+  }
+  .gradient-text-h6 {
+    font-size: 15px;
+    font-family: 'Good Times';
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
+  }
+  }
+
+  /* --------------------------------------contact----------------------------- */
+  .contact-box {
+   padding: 30px;
+
+  }
+  
+  .contact-box img {
+    width: 100%;
+    height:30vh;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    border-radius: 40px; /* Applies the same border-radius as the box */
+  }
+  
+  .contact-box h1, .contact-box h2 {
+    position: absolute;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-box h1 {
+    top: 20%;
+    left: 10%;
+    font-size: 3em;
+  }
+  
+  .contact-box h2 {
+    top: 40%;
+    left: 10%;
+    font-size: 1.5em;
+  }
+  
+  
+
+  
+
+.contact-form-wrapper {
+  padding: 10px 0;
+  background-image: url('../Assets/eco.jpg');
+  border-radius: 30px;
+  margin:30px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-form {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+  background-color: #f0f4f5;
+  height: auto;
+  padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+  border-color: #f33fb0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+}
+
+.contact-form .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-form .description {
+  color: #aeb4b9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 4px;
+  position: relative;
+   
+ 
+    border: none;
+    background-color: #d30069;
+/*     
+    overflow: hidden; */
+    color: white;
+    font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+  background-color: #d30069;
+}
+
+
+/* ---------------PRODUCT PAGE========================== */
+.gradient-text-APORA{
+  font-size: 48px;
+    font-weight: bold;
+    font-family: 'PIRULEN';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
+
+/* ===================== apora fulfillmnt ----------------------------------- */
+/* Make the backdrop transparent */
+.modal-background-aporafulfil .modal-backdrop {
+  backdrop-filter: blur(5px); 
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+}
+
+/* Make modal content transparent */
+.modal-background-aporafulfil .modal-content {
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+  border: none; /* Remove border if needed */
+}
+
+/* Keep header, body, and footer transparent as well */
+.modal-background-aporafulfil .modal-header,
+.modal-background-aporafulfil .modal-body,
+.modal-background-aporafulfil .modal-footer {
+  background-color: transparent; /* Ensure they are transparent */
+  border: none; /* Remove borders */
+}
+
+/* Optionally style the title and button for visibility */
+.modal-background-aporafulfil .modal-title,
+.modal-background-aporafulfil .btn {
+  color: #fff; /* Change text color to white for visibility */
+}
+
+.modal-background-aporafulfil .close {
+  color: white; /* Change close icon color to white */
+}
+
+.modal-background-aporafulfil .close:hover {
+  color: lightgray; /* Optional: Change color on hover */
+}
+.card {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(75, 6, 238, 0.3);
+  transform: scale(1.1); /* Scale up the card by 10% */
+  z-index: 1; /* Ensure hovered card is above others */
+}
+
+  .container-aporafulfill {  
+    width: 100%;
+    height: auto; /* Change to auto for flexibility */
+    padding: 0px 3%;
+    padding-bottom: 40px;
+  }
+
+  .container-aporafulfill h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+   
+  }
+  .value-del-aporafulfillment{
+    height: 10vh;
+    text-align: center;
+  }
+
+  .container-aporafulfill h1::after {
+    content: '';
+    background: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .row-aporafulfill {
+    display: flex;
+    
+    
+  
+    
+  }
+
+  .row-aporafulfill .service {
+    width: 23%;
+    margin-right: 2%;
+    padding: 30px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background:transparent;
+    /* transition: transform 0.5s, background 0.5s; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid black;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease; 
+
+  }
+
+
+  .service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #303ef7;
+  }
+
+  .service .service_heading {
+    font-weight: 200px;
+    font-size: 22px;
+    height: 15vh;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .service:hover {
+    background: linear-gradient(to bottom, #303ef7, #28a745); /* Blue to green gradient on hover */
+    color: #fff;
+    transform: scale(1.02);
+    padding: 20px;
+    border-radius: 5px;
+   
+    
+  }
+
+  .service:hover .service_heading{
+  font-size: 20px;
+  }
+  .service_para {
+    margin: 30px 0;
+    height: 20vh;
+    font-size: 14px;
+    text-align: justify;  
+  }
+  .service_para:hover{
+    margin: 30px 0;
+    height: 10vh;
+    text-align: justify;  
+  }
+  .service_btn {
+    padding: 10px 12px;
+    border: 1px solid #303ef7;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #303ef7;
+    display: inline-block; /* Makes the button centerable */
+  }
+
+  .service_btn:hover {
+    color: #fff;
+    background-color: #303ef7;
+  }
+  .rainbow{
+  --border-size: 0.3rem;
+  border-top: var(--border-size) solid transparent;
+
+  /* Paint an image in the border */
+  border-image: conic-gradient(
+      from var(--angle),
+      green 0deg 90deg,
+      blue 90deg 180deg,
+      white 180deg 270deg,
+      blue 270deg 360deg
+    )
+    1 stretch;
+  background: rgb(255 255 255 / var(--opacity));
+}
+
+@property --opacity {
+  syntax: "<number>";
+  initial-value: 0.5;
+  inherits: false;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes opacityChange {
+  to {
+    --opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.rainbow {
+  animation: rotate 2s linear infinite, opacityChange 3s infinite alternate;
+}
+
+
+/* ------------------service page----------------------------------- */
+@media(max-width:2000px) and (min-width:320px){
+  .greenbg-servicepage-main-div {
+    position: relative; /* Make this relative to position children absolutely */
+    text-align: left; /* Align text to the left */
+    margin-top: 40px;
+}
+.service-heading {
+  position: absolute; /* Position this above the buttons */
+  top: 20%; /* Adjust vertical position as needed */
+  left: 10%; /* Adjust horizontal position as needed */
+ 
+  font-weight: bold;
+  font-family: 'pirulen';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ /* Add some padding for better visibility */
+}
+
+.centered-image-servicepage {
+    height: 35vh;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-container {
+    position: absolute; /* Position this absolutely */
+    top: 55%; /* Adjust the vertical position as needed */
+    left: 10%; /* Adjust the horizontal position as needed */
+    transform: translateY(-50%); /* Center the buttons vertically */
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 10px; /* Space between buttons */
+}
+
+.service-button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service-button:hover {
+    background-color: white;
+    color: #333;
+}
+
+
+
+/* ================ The Timeline ================ */
+
+.timeline {
+  position: relative;
+  width: 660px;
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style-type: none;
+}
+.h6-servicepage{
+  position: relative;
+  width: auto;
+  left: 0px;
+  margin-top: 100px;
+  font-size: 20px;
+}
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 40vh;
+  margin-left: -3px;
+  background: rgb(29,58,175);
+  background: -moz-linear-gradient(top, rgba(29,58,175,0) 0%, rgb(29,58,175) 8%, rgb(29,58,175) 92%, rgba(29,58,175,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(29,58,175,0) 0%, rgb(29,58,175) 8%, rgb(29,58,175) 92%, rgba(29,58,175,0) 100%);
+  background: -o-linear-gradient(top, rgba(29,58,175,0) 0%, rgb(29,58,175) 8%, rgb(29,58,175) 92%, rgba(29,58,175,0) 100%);
+  background: -ms-linear-gradient(top, rgba(29,58,175,0) 0%, rgb(29,58,175) 8%, rgb(29,58,175) 92%, rgba(29,58,175,0) 100%);
+  background: linear-gradient(to bottom, rgba(29,58,175,0) 0%, rgb(29,58,175) 8%, rgb(29,58,175) 92%, rgba(29,58,175,0) 100%);
+  
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-l {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+}
+
+.direction-r {
+  position: relative;
+  width: 530px;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+  
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(248,248,248);
+  padding: 6px 10px;
+  border-radius: 5px;
+  
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(62, 156, 49);
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: -40px;
+}
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgb(248,248,248);
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+  
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.direction-r .desc {
+  margin: 1em 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+.timeline {
+ 	width: 100%;
+	padding: 4em 0 1em 0;
+}
+
+.timeline li {
+	padding: 2em 0;
+}
+
+.direction-l,
+.direction-r {
+	float: none;
+	width: 100%;
+
+	text-align: center;
+}
+
+.flag-wrapper {
+	text-align: center;
+}
+
+.flag {
+	background: rgb(255,255,255);
+	z-index: 15;
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: -30px;
+	left: 50%;
+	content: ' ';
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin-left: -9px;
+	background: #fff;
+	border-radius: 10px;
+	border: 4px solid rgb(19, 97, 9);
+	z-index: 10;
+}
+
+.direction-l .flag:after,
+.direction-r .flag:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -8px;
+	height: 0;
+	width: 0;
+	margin-left: -8px;
+	border: solid transparent;
+	border-bottom-color: rgb(255,255,255);
+	border-width: 15px;
+	pointer-events: none;
+}
+
+
+
+.desc {
+	position: relative;
+	margin: 1em 0 0 0;
+	padding: 1em;
+	background: rgb(245,245,245);
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	
+  z-index: 15;
+}
+
+.direction-l .desc,
+.direction-r .desc {
+	position: relative;
+	margin: 1em 1em 0 1em;
+	padding: 1em;
+	
+  z-index: 15;
+}
+
+}
+
+.secondsec-servicepage{
+  padding: 20px 30px;
+  margin-top: 20px;
+ 
+}
+.heading-servicepage{
+  font-size: 16px;
+  font-family: 'good times';
+  color: rgb(5, 5, 5);
+  letter-spacing: 5px;
+}
+.heading2-servicepage {
+  margin: 0px auto;
+  margin-top: 30px;
+  font-family: 'Good Times'; /* Ensure the font name is correctly capitalized */
+  text-shadow: 
+      2px 2px 2px rgba(41, 40, 40, 0.07), /* First shadow */
+      1px 1px 1px rgba(0, 0, 0, 0.1); /* Second shadow for a more pronounced effect */
+}
+.shortcontent-maindiv{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+}
+.shortcontent-leftdiv{
+  position: absolute;
+  left: 10px;
+  height: 20vh;
+  width: 50%;
+  text-align: justify;
+}
+.shortcontect-right-div{
+  position: absolute;
+  right: 10px;
+  height: 60vh;
+  width: 50%;
+}
+
+
+.thirddiv-servicepage{
+  font-family: 'pirulen';
+  color: green;
+  padding: 30px;
+}
+.thirddiv-content{
+  padding: 50px;
+  font-size: 18px;
+}
+
+.bluebg-servicepage-main-div {
+  position: relative; /* Make this relative to position children absolutely */
+  text-align: left; /* Align text to the left */
+  margin-top: 40px;
+}
+.fourthdiv-servicepage{
+  position: absolute; /* Position this above the buttons */
+  top: 20%; /* Adjust vertical position as needed */
+ /* Adjust horizontal position as needed */
+ padding: 40px;
+ color: rgb(7, 7, 7);
+ text-align: justify;
+ justify-content: center;
+ /* Add some padding for better visibility */
+}
+}
