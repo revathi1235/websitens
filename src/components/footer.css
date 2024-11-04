@@ -3,7 +3,7 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: #f2f3f4;
   position: relative;
 }
 .footer-cta {
@@ -20,7 +20,7 @@ ul {
   display: inline-block;
 }
 .cta-text h4 {
-  color: #fff;
+  color: #080808;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -51,11 +51,11 @@ ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+      color: #070707;
   line-height: 28px;
 }
 .footer-social-icon span {
-  color: #fff;
+  color: #131212;
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -63,7 +63,7 @@ ul {
   margin-bottom: 20px;
 }
 .footer-social-icon a {
-  color: #fff;
+  color: #030303;
   font-size: 16px;
   margin-right: 15px;
 }
@@ -84,14 +84,14 @@ ul {
   background: #DD4B39;
 }
 .footer-widget-heading h3 {
-  color: #fff;
+  color: #0e0d0d;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
   position: relative;
 }
 .footer-widget-heading h3 {
-  color: #fff;
+  color: #080808;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -103,8 +103,8 @@ ul {
   left: 0;
   bottom: -15px;
   height: 2px;
-  width: 50px;
-  background: #ff5e14;
+  width: 120px;
+  background: linear-gradient(to left,green,blue);
 }
 .footer-widget ul li {
   display: inline-block;
@@ -116,7 +116,7 @@ ul {
   color: #ff5e14;
 }
 .footer-widget ul li a {
-  color: #878787;
+  color: #0a0a0a;
   text-transform: capitalize;
 }
 .subscribe-form {
@@ -126,20 +126,20 @@ ul {
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
+  background:#f2f3f4;
+  border: 1px solid #e1e1e1;
+  color: #070707;
 }
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
+    background:linear-gradient(to left,green,blue);
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
+    border: 1px solid #e1e1e1;
+        top: 0;
 }
 .subscribe-form button i {
-  color: #fff;
+  color: #0e0d0d;
   font-size: 22px;
   transform: rotate(-6deg);
 }
@@ -150,7 +150,7 @@ ul {
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #878787;
+  color:white;
 }
 .copyright-text p a{
   color: #ff5e14;

@@ -1,0 +1,197 @@
+
+:root {
+    --level-1: #8dccad;
+    --level-2: #f5cc7f;
+    --level-3: #7b9fe0;
+    --level-4: #f27c8d;
+    --black: black;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ol {
+    list-style: none;
+  }
+  
+  /* body {
+    margin: 50px 0 100px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  } */
+  
+  .container-chart {
+    display: flex;
+    /* max-width: 1000px; */
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto
+  }
+  
+  .rectangle {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* LEVEL-1 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .level-1 {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 40px;
+    width: 17%;
+    margin-left: 91px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+    font-family: 'Pirulen';
+    background: linear-gradient(to bottom, blue, green);
+}
+
+
+  
+  .level-1::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  }
+  
+  
+  /* LEVEL-2 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .level-2-wrapper {
+    position: relative;
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 30px;
+  }
+  
+  .level-2-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 10.3%;
+    width: 82.7%;
+    height: 2px;
+    background: var(--black);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+}
+  
+  .level-2-wrapper::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: calc(100% + 20px);
+    height: 2px;
+    background: var(--black);
+  }
+  
+  .level-2-wrapper li {
+    position: relative;
+  }
+  
+  .level-2-wrapper > li::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  }
+  
+  .level-2 {
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 40px;
+    background: transparent;
+    
+  }
+  
+  /* .level-2::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  } */
+  /* .animated-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px; 
+    background: linear-gradient(270deg, #08b450, #4d13ec);
+    background-size: 200% 100%; 
+    animation: move 3s linear infinite; 
+} */
+
+@keyframes move {
+    0% {
+        background-position: 100% 0; /* Start position */
+    }
+    100% {
+        background-position: 0 0; /* End position */
+    }
+}
+
+  .level-2::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 2px;
+    background: var(--black);
+  }
+  
+  
+  /* LEVEL-3 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media (max-width: 768px) {
+    
+    .level-1 {
+        width: 80%; /* Increase width on mobile */
+        font-size: 24px; /* Adjust font size for mobile */
+        margin-left: auto; /* Centering for smaller screens */
+        margin-right: auto; /* Centering for smaller screens */
+    }
+ 
+    .level-2-wrapper {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items horizontally */
+    }
+ 
+    .level-2 {
+        width: auto; /* Allow full width on mobile */
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+ }
+ .green-background {
+  background-color: green;
+}

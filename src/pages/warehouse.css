@@ -1,0 +1,569 @@
+.container-service {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    height: 10vh;
+}
+@media only screen and (min-width: 576px) {
+    .container-service {
+        width: 560px;
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container-service {
+        width: 752px;
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container-service {
+        width: 976px;
+        max-width: 100%;
+    }
+}
+
+.OurFormula_sectionHeading {
+    color: #6d6d6d;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 90px;
+    font-family: gilroysemibold;
+}
+
+.OurFormula_sectionHeading:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 65px;
+    background: #6d6d6d;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 992px) {
+   .OurFormula_sectionHeading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+.OurFormula_formulaSubHeading {
+    font-size: 24px;
+    line-height: 120%;
+    color: #ffffffb3;
+    font-family: gilroymedium;
+    padding-right: 0;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .OurFormula_formulaSubHeading {
+        font-size: 30px;
+        line-height: 110%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+  .OurFormula_formulaSubHeading {
+        font-size: 38px;
+        line-height: 110%;
+        padding-left: 90px;
+    }
+}
+
+.page-container-service {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.WhatWeDo_whatWeDocontainer-service {
+    padding: 0;
+    position: relative;
+}
+
+@media only screen and (min-width: 992px) {
+.WhatWeDo_whatWeDocontainer-service {
+        padding: 100px 0;
+        padding-bottom: 0;
+    }
+}
+
+.WhatWeDo_sectionHeading{
+    color: #6d6d6d;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 90px;
+    font-family: gilroysemibold;
+}
+
+.WhatWeDo_sectionHeading:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 65px;
+    background: #6d6d6d;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+ 
+.WhatWeDo_whatWeDoWrapcontainer-service {
+    position: relative;
+    padding-left: 30px;
+}
+
+ .WhatWeDo_whatWeDoWrapcontainer-service:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 103%;
+    left: 0;
+    top: 0px;
+    background: #ffffff3e;
+    opacity: 0;
+}
+@media only screen and (min-width: 992px) {
+     .WhatWeDo_whatWeDoWrapcontainer-service:before {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+#wrapId {
+/*   display: flex; */
+}
+
+@media only screen and (min-width: 768px) {
+.WhatWeDo_whatWeDoWrap {
+        padding: 90px 0;
+    }
+}
+ 
+.WhatWeDo_whatWeDoWrap h5 {
+    color: #6d6d6d;
+    font-size: 15px;
+    font-family: apercu;
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+ .WhatWeDo_whatWeDoWrap h5 {
+        top: 55px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+.WhatWeDo_whatWeDoWrap h5 {
+        left: -60px;
+        top: 60px;
+    }
+}
+.WhatWeDo_whatWeDoWrap h3 {
+    font-size: 30px;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: butlerbold;
+    color: #6d6d6d;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.WhatWeDo_whatWeDoWrap h3:before {
+    content: attr(data-count);
+    font-family: apercumono;
+    font-size: 12px;
+    line-height: 18px;
+    color: #e4e3e4;
+    text-transform: uppercase;
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+.WhatWeDo_whatWeDoWrap p {
+    font-size: 20px;
+    line-height: 150%;
+    font-family: gilroymedium;
+    max-width: 100%;
+    color: #6d6d6d;
+    opacity: 1;
+    margin: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 992px) {
+.WhatWeDo_whatWeDoWrap p {
+        max-width: 100%;
+    }
+}
+
+.WhatWeDo_whatWeDoWrap {
+    padding: 0;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.WhatWeDo_whatWeDoCotentList {
+    position: absolute;
+    top: 0;
+    right: -170px;
+    height: 250px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0px 0;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.WhatWeDo_contentImage {
+    display: block;
+    position: absolute;
+    left: -100px;
+    top: -60px;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+}
+
+.WhatWeDo_bgContentImg {
+    background-repeat: no-repeat !important;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: background-image .35s;
+    -moz-transition: background-image .35s;
+    transition: background-image .35s;
+    opacity: .5;
+}
+
+.WhatWeDo_boxContent ul {
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    transition: all .35s ease;
+    -webkit-animation: WhatWeDo_fadeIn__lTmCX 1s linear;
+    -moz-animation: WhatWeDo_fadeIn__lTmCX 1s linear;
+    animation: WhatWeDo_fadeIn__lTmCX 1s linear;
+    margin-top: 75px;
+}
+
+.WhatWeDo_boxContent ul:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45px;
+    bottom: -75px;
+    background: transparent -moz-linear-gradient(285deg, #fff 0, #ffffff00 50%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(165deg, #fff, #ffffff00 50%) 0 0 no-repeat padding-box;
+    opacity: .05;
+}
+
+.WhatWeDo_boxContent ul li {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    opacity: .57;
+    font-size: 18px;
+    line-height: 10px;
+    font-family: gilroymedium;
+    color: #fff;
+    position: relative;
+    padding-left: 20px;
+}
+
+.WhatWeDo_boxContent ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* background: red; */
+    background: url('https://face44.com/_next/static/media/list-arrow.359afb25849e8380e017ba3a4458c359.png');
+    width: 10px;
+    /* height: 20px; */
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+.WhatWeDo_boxContent ul li {
+        width: 100%;
+    }
+}
+
+.WhatWeDo_scrollElement {
+    position: absolute;
+    content: "";
+    width: 3px;
+    left: 0;
+    top: 0px; /* Adjust as needed */
+    bottom: 0; /* Change this to bottom: 0; */
+    background: #fff;
+    z-index: 999;
+    opacity: 1;
+}
+
+.pin-spacer {
+    position: sticky;
+    top: 0;
+}
+
+.WhatWeDo_whatWeDoWrap.isScrollView.is-inview h3,
+.WhatWeDo_whatWeDoWrap.isScrollView.is-inview h5,
+.WhatWeDo_whatWeDoWrap.isScrollView.is-inview p {
+    color: #fff !important;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------ffoooter for prodict--------- */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #f2f3f4;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #080808;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #070707;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #131212;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #030303;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #0e0d0d;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3 {
+  color: #080808;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 120px;
+  background: linear-gradient(to left,green,blue);
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #0a0a0a;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background:#f2f3f4;
+  border: 1px solid #e1e1e1;
+  color: #070707;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background:linear-gradient(to left,green,blue);
+    padding: 13px 20px;
+    border: 1px solid #e1e1e1;
+        top: 0;
+}
+.subscribe-form button i {
+  color: #0e0d0d;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 5px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color:white;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+@media only screen and (max-width: 576px) {
+    .container-service {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .OurFormula_formulaSubHeading,
+    .WhatWeDo_whatWeDoWrap h3 {
+        font-size: 18px; /* Adjust font size for headings */
+    }
+
+    .WhatWeDo_boxContent ul li {
+        font-size: 16px; /* Smaller font size for list items */
+    }
+
+    .WhatWeDo_scrollElement {
+        left: 10px; /* Adjust left position for scroll */
+    }
+    .WhatWeDo_whatWeDoWrap p {
+      font-size: 12px;
+     
+      font-family: gilroymedium;
+      max-width: 50%;
+      color: #6d6d6d;
+      opacity: 1;
+      margin-right: 30px;
+      transition: all .3s ease;
+      position: relative;
+      z-index: 1;
+  }
+}

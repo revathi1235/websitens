@@ -488,11 +488,12 @@
   .first-content{
     margin-top: 130px;
   }
+  
 }
 
 .backgroundimg-deconsolidation{
   background-image: url('../../public/Assets/Grey\ BG\ Dark.png');
-  height: 60vh;
+  height: 65vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -613,7 +614,7 @@ display: none;
 
 /* 5 */.btn-5 {
   position: relative; /* Ensure the button has a relative position */
- 
+  border-radius: 25%;
   line-height: 42px;
   padding: 0;
   border: none;
@@ -627,7 +628,7 @@ display: none;
 .btn-5:after {
   content: '';
   position: absolute;
-  height: 2px;
+  /* height: 2px; */
   width: 100%; /* Set width to 100% to cover the button */
   background: #3b09f0;
   transition: transform 0.4s ease; /* Transition effect for transform */
@@ -731,17 +732,23 @@ display: none;
     }
   }
 
+  .text-center {
+   text-align: justify;         /* Center vertically (if needed) */
+    width: 100%;     width: 550px;
+    margin-left: 15px;              /* Full width to allow centering */
+}
 
-  .deconsolidation-img{
-  
-      width: 100%;
-      height: 50vh;
-      border-radius: 40px 40px;
-      margin-top: 10px;
-      padding: 20px;
-     
- 
-  }
+
+  .deconsolidation-img {
+    width: auto;                  /* Allow width to adjust automatically */
+    height: 50vh;                /* Set a fixed height */
+    border-radius: 40px 40px;    /* Rounded corners */
+    margin-top: 10px;            /* Margin above the image */
+    padding: 20px;               /* Padding around the image */
+    display: block;              /* Make it a block element to center */
+    margin-left: auto;           /* Center horizontally */
+    margin-right: auto;          /* Center horizontally */
+}
   @media(max-width:768px){
     
   .deconsolidation-img{
@@ -767,7 +774,7 @@ display: none;
   .block-list-deconsolidation {
     color: rgb(5, 5, 5);
     display: block; /* Ensures each item is on a new line */
-    text-align: justify; /* Justifies the text */
+     /* Justifies the text */
     padding: 0; /* Reset default padding */
     margin: 0; /* Reset default margin */
     list-style-type: none; /* Remove default list styling */
@@ -785,7 +792,7 @@ display: none;
   .selected-item-deconsolidation {
     border: 2px solid blue;
     color: rgb(3, 3, 3);
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     border-radius: 10px;
     padding: 5px;
   }
@@ -810,10 +817,10 @@ display: none;
   }
   @media(max-width:2000px) and (min-width:320px){
   .gradient-text {
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 3px;
     font-family: 'Good Times';
+    font-size: 30px;
+    text-align: justify;
+    font-weight: 500;
   }
   .aboutpage-subtitle{
     padding: 30px;
@@ -961,7 +968,7 @@ display: none;
 
 /* ---------------PRODUCT PAGE========================== */
 .gradient-text-APORA{
-  font-size: 48px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'PIRULEN';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -975,171 +982,184 @@ display: none;
 
 
 /* ===================== apora fulfillmnt ----------------------------------- */
-/* Make the backdrop transparent */
+.value-del-aporafulfillment{
+  height: 10vh;
+  text-align: center;
+}
+/* Base styling */
+.aporafulfillment-starting {
+  height: 35vh;
+  width: 100%;
+  background-image: url('../Assets/Grey BG Dark.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-backdrop-blur {
+  backdrop-filter: blur(5px); /* Adjust the blur strength */
+  z-index: 1040; /* Ensure it's above other elements but below the modal */
+}
+
 .modal-background-aporafulfil .modal-backdrop {
   backdrop-filter: blur(5px); 
-  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Make modal content transparent */
 .modal-background-aporafulfil .modal-content {
-  background-color: rgba(255, 255, 255, 0); /* Fully transparent */
-  border: none; /* Remove border if needed */
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
-/* Keep header, body, and footer transparent as well */
 .modal-background-aporafulfil .modal-header,
 .modal-background-aporafulfil .modal-body,
 .modal-background-aporafulfil .modal-footer {
-  background-color: transparent; /* Ensure they are transparent */
-  border: none; /* Remove borders */
+  background-color: transparent;
+  border: none;
 }
 
-/* Optionally style the title and button for visibility */
 .modal-background-aporafulfil .modal-title,
-.modal-background-aporafulfil .btn {
-  color: #fff; /* Change text color to white for visibility */
-}
-
+.modal-background-aporafulfil .btn,
 .modal-background-aporafulfil .close {
-  color: white; /* Change close icon color to white */
+  color: #fff;
 }
 
 .modal-background-aporafulfil .close:hover {
-  color: lightgray; /* Optional: Change color on hover */
+  color: lightgray;
 }
+
+.modal-content-text {
+  position: relative; /* Ensure positioning context */
+  z-index: 1; /* Bring text above the blurred effect */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  backdrop-filter: blur(15px); /* Apply blur effect to background */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Increased padding for better readability */
+  max-width: 100%; /* Control the width of the text */
+  margin: 20px auto; /* Center the paragraph */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
+  color: white; /* Set text color to white for readability */
+}
+
+
 .card {
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   box-shadow: 0 4px 15px rgba(75, 6, 238, 0.3);
-  transform: scale(1.1); /* Scale up the card by 10% */
-  z-index: 1; /* Ensure hovered card is above others */
+  transform: scale(1.1);
+  z-index: 1;
 }
 
-  .container-aporafulfill {  
-    width: 100%;
-    height: auto; /* Change to auto for flexibility */
-    padding: 0px 3%;
-    padding-bottom: 40px;
-  }
+.container-aporafulfill {
+  width: 100%;
+  height: auto;
+  padding: 0 3%;
+  padding-bottom: 40px;
+}
 
-  .container-aporafulfill h1 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 60px;
-    position: relative;
-   
-  }
-  .value-del-aporafulfillment{
-    height: 10vh;
-    text-align: center;
-  }
+.container-aporafulfill h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
 
-  .container-aporafulfill h1::after {
-    content: '';
-    background: #303ef7;
-    width: 100px;
-    height: 5px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.container-aporafulfill h1::after {
+  content: '';
+  background: #303ef7;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  .row-aporafulfill {
-    display: flex;
-    
-    
-  
-    
-  }
+.row-aporafulfill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+}
 
-  .row-aporafulfill .service {
-    width: 23%;
-    margin-right: 2%;
-    padding: 30px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    background:transparent;
-    /* transition: transform 0.5s, background 0.5s; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 3px solid black;
-    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease; 
+.row-aporafulfill .service {
+  width: 100%;
+  max-width: 23%;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid black;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
 
-  }
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #303ef7;
+}
 
+.service .service_heading {
+  font-weight: 200px;
+  font-size: 22px;
+  height: 15vh;
+  text-align: center;
+  margin-bottom: 8px;
+}
 
-  .service i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #303ef7;
-  }
+.service:hover {
+  background: linear-gradient(to bottom, #303ef7, #28a745);
+  color: #fff;
+  transform: scale(1.02);
+  padding: 20px;
+  border-radius: 5px;
+}
 
-  .service .service_heading {
-    font-weight: 200px;
-    font-size: 22px;
-    height: 15vh;
-    text-align: center;
-    margin-bottom: 8px;
-  }
-
-  .service:hover {
-    background: linear-gradient(to bottom, #303ef7, #28a745); /* Blue to green gradient on hover */
-    color: #fff;
-    transform: scale(1.02);
-    padding: 20px;
-    border-radius: 5px;
-   
-    
-  }
-
-  .service:hover .service_heading{
+.service:hover .service_heading {
   font-size: 20px;
-  }
-  .service_para {
-    margin: 30px 0;
-    height: 20vh;
-    font-size: 14px;
-    text-align: justify;  
-  }
-  .service_para:hover{
-    margin: 30px 0;
-    height: 10vh;
-    text-align: justify;  
-  }
-  .service_btn {
-    padding: 10px 12px;
-    border: 1px solid #303ef7;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #303ef7;
-    display: inline-block; /* Makes the button centerable */
-  }
+}
 
-  .service_btn:hover {
-    color: #fff;
-    background-color: #303ef7;
-  }
-  .rainbow{
+.service_para {
+  margin: 30px 0;
+  height: 20vh;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.service_btn {
+  padding: 10px 12px;
+  border: 1px solid #303ef7;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #303ef7;
+  display: inline-block;
+}
+
+.service_btn:hover {
+  color: #fff;
+  background-color: #303ef7;
+}
+
+.rainbow {
   --border-size: 0.3rem;
   border-top: var(--border-size) solid transparent;
-
-  /* Paint an image in the border */
-  border-image: conic-gradient(
-      from var(--angle),
-      green 0deg 90deg,
-      blue 90deg 180deg,
-      white 180deg 270deg,
-      blue 270deg 360deg
-    )
-    1 stretch;
-  background: rgb(255 255 255 / var(--opacity));
+  border-image: conic-gradient(from var(--angle), green 0deg 90deg, blue 90deg 180deg, white 180deg 270deg, blue 270deg 360deg) 1 stretch;
+  background: rgba(255, 255, 255, var(--opacity));
+  animation: rotate 2s linear infinite, opacityChange 3s infinite alternate;
 }
 
+/* Define custom properties */
 @property --opacity {
   syntax: "<number>";
   initial-value: 0.5;
@@ -1153,20 +1173,21 @@ display: none;
 }
 
 @keyframes opacityChange {
-  to {
-    --opacity: 1;
-  }
+  to { --opacity: 1; }
 }
 
 @keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
+  to { --angle: 360deg; }
 }
 
-.rainbow {
-  animation: rotate 2s linear infinite, opacityChange 3s infinite alternate;
-}
+/* Responsive Breakpoints */
+
+/* Small screens (phones) */
+
+
+
+
+
 
 
 /* ------------------service page----------------------------------- */
@@ -1193,7 +1214,7 @@ display: none;
 
 .centered-image-servicepage {
     height: 35vh;
-    width: 100%;
+    width: 80%;
     display: block;
     margin: 0 auto;
 }
@@ -1208,14 +1229,14 @@ display: none;
 }
 
 .service-button {
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 20px;
-    background: transparent;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+  border: 2px solid #080808;
+  border-radius: 20px;
+  background: transparent;
+  color: #060606;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .service-button:hover {
@@ -1471,11 +1492,11 @@ display: none;
 
 }
 
-.secondsec-servicepage{
+/* .secondsec-servicepage{
   padding: 20px 30px;
   margin-top: 20px;
  
-}
+} */
 .heading-servicepage{
   font-size: 16px;
   font-family: 'good times';
@@ -1485,6 +1506,7 @@ display: none;
 .heading2-servicepage {
   margin: 0px auto;
   margin-top: 30px;
+ 
   font-family: 'Good Times'; /* Ensure the font name is correctly capitalized */
   text-shadow: 
       2px 2px 2px rgba(41, 40, 40, 0.07), /* First shadow */
@@ -1495,7 +1517,7 @@ display: none;
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 50vh;
+  height: 20vh;
   width: 100%;
 }
 .shortcontent-leftdiv{
@@ -1516,7 +1538,7 @@ display: none;
 .thirddiv-servicepage{
   font-family: 'pirulen';
   color: green;
-  padding: 30px;
+  padding: 10px;
 }
 .thirddiv-content{
   padding: 50px;
@@ -1526,16 +1548,2120 @@ display: none;
 .bluebg-servicepage-main-div {
   position: relative; /* Make this relative to position children absolutely */
   text-align: left; /* Align text to the left */
-  margin-top: 40px;
+  margin-top: 0px;
+  width: 100%;
 }
 .fourthdiv-servicepage{
   position: absolute; /* Position this above the buttons */
   top: 20%; /* Adjust vertical position as needed */
  /* Adjust horizontal position as needed */
+ left: 20%;
  padding: 40px;
+ width: 60%;
  color: rgb(7, 7, 7);
  text-align: justify;
  justify-content: center;
  /* Add some padding for better visibility */
 }
 }
+
+
+
+/* ---------------------------multichannel integration------------------------------------------ */
+.aporafulfillment-starting {
+  height: 35vh;
+  width: 100%;
+  background-image: url('../Assets/bglightgreen2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.firstdiv-multichannelintegration {
+  display: flex;
+  width: 100%; /* Ensure it takes full width of the container */
+  align-items: stretch; /* Ensures both divs are equal height */
+  margin-top: 130px;  
+}
+.multichannelintegration-content {
+  flex: 1; /* Ensures equal width for both divs */
+  height: 100%; /* Take full height of the parent */
+  position: relative; /* For positioning the shadow */
+  padding: 50px ;
+  margin-top: 30px;
+}
+.multichannelintegration-image, 
+.multichannelintegration-content {
+  flex: 1; /* Ensures equal width for both divs */
+  height: 100%; /* Take full height of the parent */
+  position: relative; /* For positioning the shadow */
+
+}
+.wrapper {
+  padding: 35px;
+  margin-top: 30px;
+}
+
+.image--cover {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center right;
+}
+/* .multichannelintegration-image {
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  border-radius: 8px; 
+  
+} */
+
+.multichannelintegration-image img {
+  width: 100%;
+  height:45vh;
+  margin: 50px;
+  object-fit: cover; /* Ensures the image scales correctly without distortion */
+}
+
+
+
+.seconddiv-multichannelintegration h1{
+display: flex;
+font-size: 30px;
+justify-content: center;
+text-align: center;
+/* font-family: 'Good Times'; */
+font-weight: 500;
+padding:  10px;
+}
+.seconddiv-content-multichannelintegration{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+
+.valuedelivered-maindiv-multiintegration {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  height: 60vh;
+  margin: 10px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.valuedelivered-firstdiv-multiintegration,
+.valuedelivered-seconddiv-multiintegration,
+.valuedelivered-thirddiv-multiintegration {
+  height: 60vh;
+  width: 30%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+.valuedelivered-fourtdiv-multiintegration,
+.valuedelivered-fifthdiv-multiintegration {
+  height: 90vh;
+  width: 30%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+.valuedelivered-firstdiv-multiintegration:hover,
+.valuedelivered-seconddiv-multiintegration:hover,
+.valuedelivered-thirddiv-multiintegration:hover {
+  transform: scale(1.05); /* Slightly enlarges the div */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+.valuedelivered-firstdiv-multiintegration img{
+height: 30vh;
+width: 100%;
+}
+.valuedelivered-firstdiv-multiintegration p{
+  height: 25vh;
+  padding: 20px;
+  
+ 
+}
+.valuedelivered-seconddiv-multiintegration img{
+  height: 30vh;
+  width: 100%;
+  }
+  .valuedelivered-seconddiv-multiintegration p{
+    height: 25vh;
+    padding: 20px;
+  
+  }
+  .valuedelivered-thirddiv-multiintegration img{
+    height: 30vh;
+    width: 100%;
+    }
+    .valuedelivered-thirddiv-multiintegration p{
+      height: 25vh;
+      padding: 20px;
+    
+    }
+
+
+    .valuedelivered-secondmaindiv-multiintegration {
+      display: flex;
+      justify-content: center; /* centers horizontally */
+      align-items: center; /* centers vertically */
+      height: 60vh;
+      margin: 10px;
+      width: 100%;
+      margin-top: 40px;
+      position: relative;
+      text-align: center;
+    }
+    
+    .valuedelivered-fourthdiv-multiintegration,
+    .valuedelivered-fifthdiv-multiintegration {
+      height: 75vh;
+      width: 30%;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 10px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+      border-radius: 5px; /* Optional: adds rounded corners */
+    }
+   
+    
+    .valuedelivered-fourthdiv-multiintegration:hover,
+    .valuedelivered-fifthdiv-multiintegration:hover
+    {
+      transform: scale(1.05); /* Slightly enlarges the div */
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+    }
+    
+    .valuedelivered-fourthdiv-multiintegration img{
+    height: 30vh;
+    width: 100%;
+    }
+    .valuedelivered-fourthdiv-multiintegration p{
+      height: 25vh;
+      padding: 20px;
+     
+    }
+    .valuedelivered-fifthdiv-multiintegration img{
+      height: 30vh;
+      width: 100%;
+      }
+      .valuedelivered-fifthdiv-multiintegration p{
+        height: 25vh;
+        padding: 20px;
+      
+      }
+     
+
+
+      .image-container-multichannelintegration {
+        position: relative;
+      
+        margin-top: 100px;
+        width: 100%; /* Adjust as needed */
+        height: 20vh; /* Adjust as needed */
+        background-image: url('../Assets/cuttingedge.webp'); /* Replace with your image URL */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the image */
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+        display: flex;
+        padding: 30px;
+        font-family: 'Good times';
+        justify-content: center;
+        align-items: center;
+        color: white; /* Text color */
+        font-size: 18px; /* Font size */
+      }
+
+
+
+
+
+      .card-orderprocessing {
+        background-color: #393B45;
+        height: auto;
+        width: 100%; /* Change width to 100% for responsive design */
+        margin: 10vh auto;
+        border-radius: 25px;
+        padding-bottom: 1px;
+        box-shadow: 2px 2px 5px #757575;
+      }
+      
+      h5 {
+        color: #393B45;
+        text-align: center;
+        width: 100%;
+        /* background-color: #E6EBEE; */
+        border-radius: 25px 25px 0 0;
+        padding: 30px;
+        font-weight: 800;
+        margin: 0;
+      }
+      
+      .image-crop-orderprocessing {
+        display: block;
+        position: relative;
+        background-color: #E6EBEE;
+        width: 100%; /* Change width to 100% for responsive design */
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 0px;
+        overflow: hidden;
+        box-shadow: 1px 1px 5px #4069E2;
+      }
+      
+      .avatar-orderprocessing {
+        display: inline;
+        height: 230px;
+        width: 100%;
+      }
+      
+      .bio-orderprocessing {
+        display: block;
+        margin: 10px auto;
+        width: 280px;
+        height: 25vh;
+      }
+      
+      .bio-orderprocessing p {
+        color: #E6EBEE;
+        font-weight: lighter;
+        font-size: 15px;
+        text-align: justify;
+      }
+      
+
+
+
+
+      
+.seconddiv-orderprocessing h1{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  /* font-family: 'Good Times'; */
+  font-weight: 500;
+  padding:  10px;
+  }
+  .seconddiv-content-orderprocessing{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  }
+  
+  
+  .valuedelivered-maindiv-orderprocessing {
+    display: flex;         /* Use Flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 20px;            /* Space between each section */
+  }
+  
+  .valuedelivered-firstdiv-orderprocessing,
+  .valuedelivered-seconddiv-orderprocessing,
+  .valuedelivered-thirddiv-orderprocessing,
+  .valuedelivered-fourthdiv-orderprocessing {
+    display: flex;         /* Use Flexbox for each item */
+    align-items: center; 
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+    width: 80%;
+    margin-left: 130px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    border-radius: 5px;  /* Center items vertically */
+  }
+  
+  .valuedelivered-firstdiv-orderprocessing img,
+  .valuedelivered-seconddiv-orderprocessing img,
+  .valuedelivered-thirddiv-orderprocessing img,
+  .valuedelivered-fourthdiv-orderprocessing img {
+    width: 50vh;         /* Set a specific width for images */
+    height: auto;         /* Maintain aspect ratio */
+    margin-right: 20px;   /* Space between image and text */
+    /* Optional: adds rounded corners */
+  }
+  
+  .content {
+    max-width: 600px;     /* Limit content width */
+  }
+  
+
+  .valuedelivered-firstdiv-orderprocessing:hover,
+  .valuedelivered-seconddiv-orderprocessing:hover,
+  .valuedelivered-thirddiv-orderprocessing:hover {
+    transform: scale(1.05); /* Slightly enlarges the div */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+  }
+
+
+
+
+
+
+
+
+  .seconddiv-workforcemanagement h1{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    /* font-family: 'Good Times'; */
+    font-weight: 500;
+    padding:  10px;
+    }
+    .seconddiv-content-workforcemanagement{
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+    }
+    
+    
+    .valuedelivered-maindiv-workforcemanagement {
+      display: flex;         /* Use Flexbox */
+      flex-direction: column; /* Arrange items in a column */
+      gap: 20px;            /* Space between each section */
+    }
+    
+    .valuedelivered-firstdiv- ,
+    .valuedelivered-seconddiv-  ,
+    .valuedelivered-thirddiv- ,
+    .valuedelivered-fourthdiv-   {
+      display: flex;         /* Use Flexbox for each item */
+      align-items: center; 
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 10px;
+      width: 80%;
+      margin-left: 130px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+      border-radius: 5px;  /* Center items vertically */
+    }
+    
+    .valuedelivered-firstdiv-  img,
+    .valuedelivered-seconddiv-   img,
+    .valuedelivered-thirddiv-  img,
+    .valuedelivered-fourthdiv-   img {
+      width: 50vh;         /* Set a specific width for images */
+      height: auto;         /* Maintain aspect ratio */
+      margin-right: 20px;   /* Space between image and text */
+      /* Optional: adds rounded corners */
+    }
+    
+    .content {
+      max-width: 600px;     /* Limit content width */
+    }
+    
+  
+    .valuedelivered-firstdiv- :hover,
+    .valuedelivered-seconddiv-  :hover,
+    .valuedelivered-thirddiv- :hover {
+      transform: scale(1.05); /* Slightly enlarges the div */
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+    }
+  
+  
+
+
+
+
+
+
+    .card-workforcemanagement {
+      background-color: #393B45;
+      height: auto;
+      width: 100%; /* Change width to 100% for responsive design */
+      margin: 10vh auto;
+      border-radius: 25px;
+      padding-bottom: 1px;
+      box-shadow: 2px 2px 5px #4069E2;
+    }
+    
+    h5 {
+      color: #393B45;
+      text-align: center;
+      width: 100%;
+      /* background-color: #E6EBEE; */
+      border-radius: 25px 25px 0 0;
+      padding: 30px;
+      font-weight: 800;
+      margin: 0;
+    }
+    
+    .image-crop-workforcemanagement {
+      display: block;
+      position: relative;
+      background-color: #E6EBEE;
+      width: 100%; /* Change width to 100% for responsive design */
+      height: 150px;
+      margin: 0 auto;
+      margin-top: 0px;
+      overflow: hidden;
+      box-shadow: 1px 1px 5px #4069E2;
+    }
+    
+    .avatar-workforcemanagement {
+      display: inline;
+      height: 230px;
+      width: 100%;
+    }
+    
+    .bio-workforcemanagement {
+      display: block;
+      margin: 10px auto;
+      width: 366px;
+      height: 30vh;
+    }
+    
+    .bio-workforcemanagement p {
+      color: #E6EBEE;
+      font-weight: lighter;
+      font-size: 15px;
+      text-align: justify;
+    }
+    
+
+
+/* ---------------- picklist gen---------------------- */
+.starting-picklistgeneration {
+  height: 35vh;
+  width: 100%;
+  background-image: url('../Assets/whitebg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.starting-picksequencing {
+  height: 35vh;
+  width: 100%;
+  background-image: url('../Assets/whitebg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* -------------- */
+.bio-pickandshipping {
+  display: block;
+  margin: 10px auto;
+  width: 280px;
+  height: 35vh;
+}
+
+.bio-pickandshipping p {
+  color: #E6EBEE;
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: justify;
+}
+
+
+
+
+
+/* -------------pick and shipping ------------------------------------- */
+.valuedelivered-maindiv-pickandshipping {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  height: 60vh;
+  margin: 10px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.valuedelivered-firstdiv-pickandshipping,
+.valuedelivered-seconddiv-pickandshipping,
+.valuedelivered-thirddiv-pickandshipping {
+  height: 38vh;
+  width: 30%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+.valuedelivered-firstdiv-pickandshipping:hover,
+.valuedelivered-seconddiv-pickandshipping:hover,
+.valuedelivered-thirddiv-pickandshipping:hover {
+transform: scale(1.05); /* Slightly enlarges the div */
+box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+.valuedelivered-firstdiv-pickandshipping img{
+height: 30vh;
+width: 100%;
+}
+.valuedelivered-firstdiv-pickandshipping p{
+  height: 25vh;
+  padding: 20px;
+ text-align: justify;
+}
+.valuedelivered-seconddiv-pickandshipping img{
+  height: 30vh;
+  width: 100%;
+  }
+  .valuedelivered-seconddiv-pickandshipping p{
+    height: 25vh;
+    padding: 20px;
+    text-align: justify;
+  }
+  .valuedelivered-thirddiv-pickandshipping img{
+    height: 30vh;
+    width: 100%;
+    }
+    .valuedelivered-thirddiv-pickandshipping p{
+      height: 25vh;
+      padding: 20px;
+    text-align: justify;
+    
+    }
+
+
+    .text-start{
+      text-align: justify;
+    }
+    .text-start div{
+      line-height: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ====================inbount receipt================================== */
+    
+.valuedelivered-maindiv-inbountreceipt {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  height: 60vh;
+  margin: 10px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.valuedelivered-firstdiv-inbountreceipt,
+.valuedelivered-seconddiv-inbountreceipt,
+.valuedelivered-thirddiv-inbountreceipt {
+  height: 65vh;
+  width: 30%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+
+.valuedelivered-firstdiv-inbountreceipt:hover,
+.valuedelivered-seconddiv-inbountreceipt:hover,
+.valuedelivered-thirddiv-inbountreceipt:hover {
+  transform: scale(1.05); /* Slightly enlarges the div */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+.valuedelivered-firstdiv-inbountreceipt img{
+height: 30vh;
+width: 100%;
+}
+.valuedelivered-firstdiv-inbountreceipt p{
+  height: 25vh;
+  padding: 20px;
+  text-align: justify ;
+ 
+}
+.valuedelivered-seconddiv-inbountreceipt img{
+  height: 30vh;
+  width: 100%;
+  }
+  .valuedelivered-seconddiv-inbountreceipt p{
+    height: 25vh;
+    padding: 20px;
+    text-align: justify;
+  
+  }
+  .valuedelivered-thirddiv-inbountreceipt img{
+    height: 30vh;
+    width: 100%;
+    }
+    .valuedelivered-thirddiv-inbountreceipt p{
+      height: 25vh;
+      padding: 20px;
+      text-align: justify;
+    }
+
+
+    .valuedelivered-secondmaindiv-inbountreceipt {
+      display: flex;
+      justify-content: center; /* centers horizontally */
+      align-items: center; /* centers vertically */
+      height: 60vh;
+      margin: 10px;
+      width: 100%;
+      margin-top: 40px;
+      position: relative;
+      text-align: center;
+    }
+
+
+
+
+
+
+
+
+    /* ------------------inbount receipt-------------------------- */
+    .container-inbountreceipt {
+      width: 100%;
+      height: auto;
+      padding: 0 3%;
+      padding-bottom: 40px;
+    }
+    
+    .container-inbountreceipt h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 60px;
+      position: relative;
+    }
+    
+    .container-inbountreceipt h1::after {
+      content: '';
+      background: #303ef7;
+      width: 100px;
+      height: 5px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .row-inbountreceipt {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2%;
+    }
+    
+    .row-inbountreceipt .service-inbountreceipt {
+      width: 100%;
+      max-width: 23%;
+      margin-bottom: 20px;
+      padding: 30px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 3px solid black;
+      transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+    }
+    
+    .service-inbountreceipt i {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #303ef7;
+    }
+    
+    .service-inbountreceipt .service_heading-inbountreceipt {
+      font-weight: 200px;
+      font-size: 22px;
+      height: 5vh;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    
+    .service-inbountreceipt:hover {
+      background: linear-gradient(to bottom, #303ef7, #28a745);
+      color: #fff;
+      transform: scale(1.02);
+      padding: 10px;
+      height: 32vh;
+      border-radius: 5px;
+    }
+    
+    .service-inbountreceipt:hover .service_heading-inbountreceipt {
+      font-size: 20px;
+    }
+    
+    .service_para-inbountreceipt {
+      margin: 30px 0;
+      height: 10vh;
+      font-size: 14px;
+      text-align: justify;
+    }
+    
+   
+    
+    .rainbow-inbountreceipt {
+      --border-size: 0.3rem;
+      border-top: var(--border-size) solid transparent;
+      border-image: conic-gradient(from var(--angle), green 0deg 90deg, blue 90deg 180deg, white 180deg 270deg, blue 270deg 360deg) 1 stretch;
+      background: rgba(255, 255, 255, var(--opacity));
+      animation: rotate 2s linear infinite, opacityChange 3s infinite alternate;
+    }
+    
+    /* Define custom properties */
+    @property --opacity {
+      syntax: "<number>";
+      initial-value: 0.5;
+      inherits: false;
+    }
+    
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+    
+    @keyframes opacityChange {
+      to { --opacity: 1; }
+    }
+    
+    @keyframes rotate {
+      to { --angle: 360deg; }
+    }
+    
+    /* Responsive Breakpoints */
+    
+    /* Small screens (phones) */
+    
+    
+    
+    
+
+    /* ----------------------------CROSS DOCKING-------------------------- */
+    .valuedelivered-maindiv-crossdocking {
+      display: flex;
+      justify-content: center; /* centers horizontally */
+      align-items: center; /* centers vertically */
+      height: 60vh;
+      margin: 10px;
+      margin-top: 80px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+    
+    .valuedelivered-firstdiv-crossdocking,
+    .valuedelivered-seconddiv-crossdocking,
+    .valuedelivered-thirddiv-crossdocking {
+      height: 80vh;
+      width: 30%;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 10px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+      border-radius: 5px; /* Optional: adds rounded corners */
+    }
+    
+    
+    .valuedelivered-firstdiv-crossdocking:hover,
+    .valuedelivered-seconddiv-crossdocking:hover,
+    .valuedelivered-thirddiv-crossdocking:hover {
+      transform: scale(1.05); /* Slightly enlarges the div */
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+    }
+    
+    .valuedelivered-firstdiv-crossdocking img{
+    height: 30vh;
+    width: 100%;
+    }
+    .valuedelivered-firstdiv-crossdocking p{
+      height: 25vh;
+      padding: 20px;
+      text-align: justify ;
+     
+    }
+    .valuedelivered-seconddiv-crossdocking img{
+      height: 30vh;
+      width: 100%;
+      }
+      .valuedelivered-seconddiv-crossdocking p{
+        height: 25vh;
+        padding: 20px;
+        text-align: justify;
+      
+      }
+      .valuedelivered-thirddiv-crossdocking img{
+        height: 30vh;
+        width: 100%;
+        }
+        .valuedelivered-thirddiv-crossdocking p{
+          height: 25vh;
+          padding: 20px;
+          text-align: justify;
+        }
+    
+    
+        .valuedelivered-secondmaindiv-crossdocking {
+          display: flex;
+          justify-content: center; /* centers horizontally */
+          align-items: center; /* centers vertically */
+          height: 60vh;
+          margin: 10px;
+          width: 100%;
+          margin-top: 40px;
+          position: relative;
+          text-align: center;
+        }
+    
+        .container-crossdocking {
+          width: 100%;
+          height: auto;
+          padding: 0 3%;
+          padding-bottom: 40px;
+        }
+        
+        .container-crossdocking h1 {
+          text-align: center;
+          font-size: 30px;
+          margin-bottom: 60px;
+          position: relative;
+        }
+        
+        .container-crossdocking h1::after {
+          content: '';
+          background: #303ef7;
+          width: 100px;
+          height: 5px;
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        
+        .row-crossdocking {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2%;
+        }
+        
+        .row-crossdocking .service-crossdocking {
+          width: 100%;
+          max-width: 23%;
+          margin-bottom: 20px;
+          padding: 30px 20px;
+          font-size: 14px;
+          cursor: pointer;
+          background: transparent;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-top: 3px solid black;
+          transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+        }
+        
+        .service-crossdocking i {
+          font-size: 40px;
+          margin-bottom: 10px;
+          color: #303ef7;
+        }
+        
+        .service-crossdocking .service_heading-crossdocking {
+          font-weight: 200px;
+          font-size: 22px;
+          height: 5vh;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+        
+        .service-crossdocking:hover {
+          background: linear-gradient(to bottom, #303ef7, #28a745);
+          color: #fff;
+          transform: scale(1.02);
+          padding: 10px;
+          height: 32vh;
+          border-radius: 5px;
+        }
+        
+        .service-crossdocking:hover .service_heading-crossdocking {
+          font-size: 20px;
+        }
+        
+        .service_para-crossdocking {
+          margin: 30px 0;
+          height: 10vh;
+          font-size: 14px;
+          text-align: justify;
+        }
+        
+       
+        
+        .rainbow-crossdocking {
+          --border-size: 0.3rem;
+          border-top: var(--border-size) solid transparent;
+          border-image: conic-gradient(from var(--angle), green 0deg 90deg, blue 90deg 180deg, white 180deg 270deg, blue 270deg 360deg) 1 stretch;
+          background: rgba(255, 255, 255, var(--opacity));
+          animation: rotate 2s linear infinite, opacityChange 3s infinite alternate;
+        }
+        
+        /* Define custom properties */
+        @property --opacity {
+          syntax: "<number>";
+          initial-value: 0.5;
+          inherits: false;
+        }
+        
+        @property --angle {
+          syntax: "<angle>";
+          initial-value: 0deg;
+          inherits: false;
+        }
+        
+        @keyframes opacityChange {
+          to { --opacity: 1; }
+        }
+        
+        @keyframes rotate {
+          to { --angle: 360deg; }
+        }
+        
+        /* Responsive Breakpoints */
+        
+        /* Small screens (phones) */
+        
+        
+        
+    /* -----------------------------purveydeconsolidation--------------------------------- */
+    .valuedelivered-maindiv-purveydeconsolidation {
+      display: flex;
+      justify-content: center; /* centers horizontally */
+      align-items: center; /* centers vertically */
+      height: 60vh;
+      margin: 10px;
+      margin-top: 80px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+    
+    .valuedelivered-firstdiv-purveydeconsolidation,
+    .valuedelivered-seconddiv-purveydeconsolidation,
+    .valuedelivered-thirddiv-purveydeconsolidation {
+      height: 65vh;
+      width: 30%;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 10px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+      border-radius: 5px; /* Optional: adds rounded corners */
+    }
+    
+    
+    .valuedelivered-firstdiv-purveydeconsolidation:hover,
+    .valuedelivered-seconddiv-purveydeconsolidation:hover,
+    .valuedelivered-thirddiv-purveydeconsolidation:hover {
+      transform: scale(1.05); /* Slightly enlarges the div */
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+    }
+    
+    .valuedelivered-firstdiv-purveydeconsolidation img{
+    height: 30vh;
+    width: 100%;
+    }
+    .valuedelivered-firstdiv-purveydeconsolidation p{
+      height: 25vh;
+      padding: 20px;
+      text-align: justify ;
+     
+    }
+    .valuedelivered-seconddiv-purveydeconsolidation img{
+      height: 30vh;
+      width: 100%;
+      }
+      .valuedelivered-seconddiv-purveydeconsolidation p{
+        height: 25vh;
+        padding: 20px;
+        text-align: justify;
+      
+      }
+      .valuedelivered-thirddiv-purveydeconsolidation img{
+        height: 30vh;
+        width: 100%;
+        }
+        .valuedelivered-thirddiv-purveydeconsolidation p{
+          height: 25vh;
+          padding: 20px;
+          text-align: justify;
+        }
+    
+    
+        .valuedelivered-secondmaindiv-purveydeconsolidation {
+          display: flex;
+          justify-content: center; /* centers horizontally */
+          align-items: center; /* centers vertically */
+          height: 60vh;
+          margin: 10px;
+          width: 100%;
+          margin-top: 40px;
+          position: relative;
+          text-align: center;
+        }
+    
+       
+        
+    
+
+        /* -----------quality check----------- */
+        .valuedelivered-maindiv-qualitycheck {
+          display: flex;
+          justify-content: center; /* centers horizontally */
+          align-items: center; /* centers vertically */
+          height: 60vh;
+          margin: 10px;
+          margin-top: 80px;
+          width: 100%;
+          position: relative;
+          text-align: center;
+        }
+        
+        .valuedelivered-firstdiv-qualitycheck,
+        .valuedelivered-seconddiv-qualitycheck,
+        .valuedelivered-thirddiv-qualitycheck {
+        height:78vh;
+          width: 30%;
+          padding: 20px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          margin: 0 10px;
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+          border-radius: 5px; /* Optional: adds rounded corners */
+        }
+        
+        
+        .valuedelivered-firstdiv-qualitycheck:hover,
+        .valuedelivered-seconddiv-qualitycheck:hover,
+        .valuedelivered-thirddiv-qualitycheck:hover {
+          transform: scale(1.05); /* Slightly enlarges the div */
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+        }
+        
+        .valuedelivered-firstdiv-qualitycheck img{
+        height: 30vh;
+        width: 100%;
+        }
+        .valuedelivered-firstdiv-qualitycheck p{
+          height: 25vh;
+          padding: 20px;
+          text-align: justify ;
+         
+        }
+        .valuedelivered-seconddiv-qualitycheck img{
+          height: 30vh;
+          width: 100%;
+          }
+          .valuedelivered-seconddiv-qualitycheck p{
+            height: 25vh;
+            padding: 20px;
+            text-align: justify;
+          
+          }
+          .valuedelivered-thirddiv-qualitycheck img{
+            height: 30vh;
+            width: 100%;
+            }
+            .valuedelivered-thirddiv-qualitycheck p{
+              height: 25vh;
+              padding: 20px;
+              text-align: justify;
+            }
+        
+        
+            .valuedelivered-secondmaindiv-qualitycheck {
+              display: flex;
+              justify-content: center; /* centers horizontally */
+              align-items: center; /* centers vertically */
+              height: 60vh;
+              margin: 10px;
+              width: 100%;
+              margin-top: 40px;
+              position: relative;
+              text-align: center;
+            }
+        
+           
+            
+        
+    
+          
+            
+
+
+            /* --------------------repackig and putaway================================== */
+            .valuedelivered-maindiv-repackingandputaway {
+              display: flex;
+              justify-content: center; /* centers horizontally */
+              align-items: center; /* centers vertically */
+              height: 60vh;
+              margin: 10px;
+              margin-top: 80px;
+              width: 100%;
+              position: relative;
+              text-align: center;
+            }
+            
+            .valuedelivered-firstdiv-repackingandputaway,
+            .valuedelivered-seconddiv-repackingandputaway,
+            .valuedelivered-thirddiv-repackingandputaway {
+            height:78vh;
+              width: 30%;
+              padding: 20px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              margin: 0 10px;
+              box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+              border-radius: 5px; /* Optional: adds rounded corners */
+            }
+            
+            
+            .valuedelivered-firstdiv-repackingandputaway:hover,
+            .valuedelivered-seconddiv-repackingandputaway:hover,
+            .valuedelivered-thirddiv-repackingandputaway:hover {
+              transform: scale(1.05); /* Slightly enlarges the div */
+             
+              box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+            }
+            
+            .valuedelivered-firstdiv-repackingandputaway img{
+            height: 30vh;
+            width: 100%;
+            }
+            .valuedelivered-firstdiv-repackingandputaway p{
+              height: 25vh;
+              padding: 20px;
+              text-align: justify ;
+             
+            }
+            .valuedelivered-seconddiv-repackingandputaway img{
+              height: 30vh;
+              width: 100%;
+              }
+              .valuedelivered-seconddiv-repackingandputaway p{
+                height: 25vh;
+                padding: 20px;
+                text-align: justify;
+              
+              }
+              .valuedelivered-thirddiv-repackingandputaway img{
+                height: 30vh;
+                width: 100%;
+                }
+                .valuedelivered-thirddiv-repackingandputaway p{
+                  height: 25vh;
+                  padding: 20px;
+                  text-align: justify;
+                }
+            
+            
+                .valuedelivered-secondmaindiv-repackingandputaway {
+                  display: flex;
+                  justify-content: center; /* centers horizontally */
+                  align-items: center; /* centers vertically */
+                  height: 60vh;
+                  margin: 10px;
+                  width: 100%;
+                  margin-top: 40px;
+                  position: relative;
+                  text-align: center;
+                }
+            
+               
+                .container-repackingandputaway {
+                  width: 100%;
+                  height: auto;
+                  padding: 0 3%;
+                  padding-bottom: 40px;
+                }
+                
+                .container-repackingandputaway h1 {
+                  text-align: center;
+                  font-size: 30px;
+                  margin-bottom: 60px;
+                  position: relative;
+                }
+                
+                .container-repackingandputaway h1::after {
+                  content: '';
+                  background: #303ef7;
+                  width: 100px;
+                  height: 5px;
+                  position: absolute;
+                  bottom: -5px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+                
+                .row-repackingandputaway {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 2%;
+                }
+                
+                .row-repackingandputaway .service-repackingandputaway {
+                  width: 100%;
+                  max-width: 23%;
+                  margin-bottom: 20px;
+                  padding: 30px 20px;
+                  font-size: 14px;
+                  cursor: pointer;
+                  background: transparent;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  border-top: 3px solid black;
+                  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+                }
+                
+                .service-repackingandputaway i {
+                  font-size: 40px;
+                  margin-bottom: 10px;
+                  color: #303ef7;
+                }
+                
+                .service-repackingandputaway .service_heading-repackingandputaway {
+                  font-weight: 200px;
+                  font-size: 22px;
+                  height: 5vh;
+                  text-align: center;
+                  margin-bottom: 8px;
+                }
+                
+                .service-repackingandputaway:hover {
+                  background: linear-gradient(to bottom, #303ef7, #28a745);
+                  color: #fff;
+                  transform: scale(1.02);
+                  padding: 10px;
+                  height: 40vh;
+                  border-radius: 5px;
+                }
+                
+                .service-repackingandputaway:hover .service_heading-repackingandputaway {
+                  font-size: 20px;
+                }
+                
+                .service_para-repackingandputaway {
+                  margin: 30px 0;
+                  height: 10vh;
+                  font-size: 14px;
+                  text-align: justify;
+                }
+                
+               
+                
+                .rainbow-repackingandputaway {
+                  --border-size: 0.3rem;
+                  border-top: var(--border-size) solid transparent;
+                  border-image: conic-gradient(from var(--angle), green 0deg 90deg, blue 90deg 180deg, white 180deg 270deg, blue 270deg 360deg) 1 stretch;
+                  background: rgba(255, 255, 255, var(--opacity));
+                  animation: rotate 2s linear infinite, opacityChange 3s infinite alternate;
+                }
+                
+                /* Define custom properties */
+                @property --opacity {
+                  syntax: "<number>";
+                  initial-value: 0.5;
+                  inherits: false;
+                }
+                
+                @property --angle {
+                  syntax: "<angle>";
+                  initial-value: 0deg;
+                  inherits: false;
+                }
+                
+                @keyframes opacityChange {
+                  to { --opacity: 1; }
+                }
+                
+                @keyframes rotate {
+                  to { --angle: 360deg; }
+                }
+                
+                /* Responsive Breakpoints */
+                
+                /* Small screens (phones) */
+                
+                        
+            
+        
+              
+                /* ======================pick management=-============================= */
+                .valuedelivered-maindiv-pickmanagement {
+                  display: flex;
+                  justify-content: center; /* centers horizontally */
+                  align-items: center; /* centers vertically */
+                  height: 60vh;
+                  margin: 10px;
+                  margin-top: 80px;
+                  width: 100%;
+                  position: relative;
+                  text-align: center;
+                }
+                
+                .valuedelivered-firstdiv-pickmanagement,
+                .valuedelivered-seconddiv-pickmanagement,
+                .valuedelivered-thirddiv-pickmanagement {
+                  height: 80vh;
+                  width: 30%;
+                  padding: 20px;
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  margin: 0 10px;
+                  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+                  border-radius: 5px; /* Optional: adds rounded corners */
+                }
+                
+                
+                .valuedelivered-firstdiv-pickmanagement:hover,
+                .valuedelivered-seconddiv-pickmanagement:hover,
+                .valuedelivered-thirddiv-pickmanagement:hover {
+                  transform: scale(1.05); /* Slightly enlarges the div */
+                  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+                }
+                
+                .valuedelivered-firstdiv-pickmanagement img{
+                height: 30vh;
+                width: 100%;
+                }
+                .valuedelivered-firstdiv-pickmanagement p{
+                  height: 25vh;
+                  padding: 20px;
+                  text-align: justify ;
+                 
+                }
+                .valuedelivered-seconddiv-pickmanagement img{
+                  height: 30vh;
+                  width: 100%;
+                  }
+                  .valuedelivered-seconddiv-pickmanagement p{
+                    height: 25vh;
+                    padding: 20px;
+                    text-align: justify;
+                  
+                  }
+                  .valuedelivered-thirddiv-pickmanagement img{
+                    height: 30vh;
+                    width: 100%;
+                    }
+                    .valuedelivered-thirddiv-pickmanagement p{
+                      height: 25vh;
+                      padding: 20px;
+                      text-align: justify;
+                    }
+                
+                
+                    .valuedelivered-secondmaindiv-pickmanagement {
+                      display: flex;
+                      justify-content: center; /* centers horizontally */
+                      align-items: center; /* centers vertically */
+                      height: 60vh;
+                      margin: 10px;
+                      width: 100%;
+                      margin-top: 40px;
+                      position: relative;
+                      text-align: center;
+                    }
+                
+                   
+                    
+
+
+
+
+                        /* ====================== dispatch =-============================= */
+                .valuedelivered-maindiv-dispatch {
+                  display: flex;
+                  justify-content: center; /* centers horizontally */
+                  align-items: center; /* centers vertically */
+                  height: 60vh;
+                  margin: 10px;
+                  margin-top: 80px;
+                  width: 100%;
+                  position: relative;
+                  text-align: center;
+                }
+                
+                .valuedelivered-firstdiv-dispatch,
+                .valuedelivered-seconddiv-dispatch,
+                .valuedelivered-thirddiv-dispatch {
+                  height: 80vh;
+                  width: 30%;
+                  padding: 20px;
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  margin: 0 10px;
+                  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+                  border-radius: 5px; /* Optional: adds rounded corners */
+                }
+                
+                
+                .valuedelivered-firstdiv-dispatch:hover,
+                .valuedelivered-seconddiv-dispatch:hover,
+                .valuedelivered-thirddiv-dispatch:hover {
+                  transform: scale(1.05); /* Slightly enlarges the div */
+                  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+                }
+                
+                .valuedelivered-firstdiv-dispatch img{
+                height: 30vh;
+                width: 100%;
+                }
+                .valuedelivered-firstdiv-dispatch p{
+                  height: 25vh;
+                  padding: 20px;
+                  text-align: justify ;
+                 
+                }
+                .valuedelivered-seconddiv-dispatch img{
+                  height: 30vh;
+                  width: 100%;
+                  }
+                  .valuedelivered-seconddiv-dispatch p{
+                    height: 25vh;
+                    padding: 20px;
+                    text-align: justify;
+                  
+                  }
+                  .valuedelivered-thirddiv-dispatch img{
+                    height: 30vh;
+                    width: 100%;
+                    }
+                    .valuedelivered-thirddiv-dispatch p{
+                      height: 25vh;
+                      padding: 20px;
+                      text-align: justify;
+                    }
+                
+                
+                    .valuedelivered-secondmaindiv-dispatch {
+                      display: flex;
+                      justify-content: center; /* centers horizontally */
+                      align-items: center; /* centers vertically */
+                      height: 60vh;
+                      margin: 10px;
+                      width: 100%;
+                      margin-top: 40px;
+                      position: relative;
+                      text-align: center;
+                    }
+                
+                   
+                    
+
+
+              
+                        /* ====================== inventory management =-============================= */
+                        .valuedelivered-maindiv-inventorymanagement {
+                          display: flex;
+                          justify-content: center; /* centers horizontally */
+                          align-items: center; /* centers vertically */
+                          height: 60vh;
+                          margin: 10px;
+                          margin-top: 80px;
+                          width: 100%;
+                          position: relative;
+                          text-align: center;
+                        }
+                        
+                        .valuedelivered-firstdiv-inventorymanagement,
+                        .valuedelivered-seconddiv-inventorymanagement,
+                        .valuedelivered-thirddiv-inventorymanagement {
+                          height: 80vh;
+                          width: 30%;
+                          padding: 20px;
+                          transition: transform 0.3s ease, box-shadow 0.3s ease;
+                          margin: 0 10px;
+                          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+                          border-radius: 5px; /* Optional: adds rounded corners */
+                        }
+                        
+                        
+                        .valuedelivered-firstdiv-inventorymanagement:hover,
+                        .valuedelivered-seconddiv-inventorymanagement:hover,
+                        .valuedelivered-thirddiv-inventorymanagement:hover {
+                          transform: scale(1.05); /* Slightly enlarges the div */
+                          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+                        }
+                        
+                        .valuedelivered-firstdiv-inventorymanagement img{
+                        height: 30vh;
+                        width: 100%;
+                        }
+                        .valuedelivered-firstdiv-inventorymanagement p{
+                          height: 25vh;
+                          padding: 20px;
+                          text-align: justify ;
+                         
+                        }
+                        .valuedelivered-seconddiv-inventorymanagement img{
+                          height: 30vh;
+                          width: 100%;
+                          }
+                          .valuedelivered-seconddiv-inventorymanagement p{
+                            height: 25vh;
+                            padding: 20px;
+                            text-align: justify;
+                          
+                          }
+                          .valuedelivered-thirddiv-inventorymanagement img{
+                            height: 30vh;
+                            width: 100%;
+                            }
+                            .valuedelivered-thirddiv-inventorymanagement p{
+                              height: 25vh;
+                              padding: 20px;
+                              text-align: justify;
+                            }
+                        
+                        
+                            .valuedelivered-secondmaindiv-inventorymanagement {
+                              display: flex;
+                              justify-content: center; /* centers horizontally */
+                              align-items: center; /* centers vertically */
+                              height: 60vh;
+                              margin: 10px;
+                              width: 100%;
+                              margin-top: 40px;
+                              position: relative;
+                              text-align: center;
+                            }
+                        
+                           
+                                  
+
+                            
+                        /* ====================== api integration =-============================= */
+                        .valuedelivered-maindiv-apiintegration {
+                          display: flex;
+                          justify-content: center; /* centers horizontally */
+                          align-items: center; /* centers vertically */
+                          height: 60vh;
+                          margin: 10px;
+                          margin-top: 80px;
+                          width: 100%;
+                          position: relative;
+                          text-align: center;
+                        }
+                        
+                        .valuedelivered-firstdiv-apiintegration,
+                        .valuedelivered-seconddiv-apiintegration,
+                        .valuedelivered-thirddiv-apiintegration {
+                          height: 80vh;
+                          width: 30%;
+                          padding: 20px;
+                          transition: transform 0.3s ease, box-shadow 0.3s ease;
+                          margin: 0 10px;
+                          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+                          border-radius: 5px; /* Optional: adds rounded corners */
+                        }
+                        
+                        
+                        .valuedelivered-firstdiv-apiintegration:hover,
+                        .valuedelivered-seconddiv-apiintegration:hover,
+                        .valuedelivered-thirddiv-apiintegration:hover {
+                          transform: scale(1.05); /* Slightly enlarges the div */
+                          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+                        }
+                        
+                        .valuedelivered-firstdiv-apiintegration img{
+                        height: 30vh;
+                        width: 100%;
+                        }
+                        .valuedelivered-firstdiv-apiintegration p{
+                          height: 25vh;
+                          padding: 20px;
+                          text-align: justify ;
+                         
+                        }
+                        .valuedelivered-seconddiv-apiintegration img{
+                          height: 30vh;
+                          width: 100%;
+                          }
+                          .valuedelivered-seconddiv-apiintegration p{
+                            height: 25vh;
+                            padding: 20px;
+                            text-align: justify;
+                          
+                          }
+                          .valuedelivered-thirddiv-apiintegration img{
+                            height: 30vh;
+                            width: 100%;
+                            }
+                            .valuedelivered-thirddiv-apiintegration p{
+                              height: 25vh;
+                              padding: 20px;
+                              text-align: justify;
+                            }
+                        
+                        
+                            .valuedelivered-secondmaindiv-apiintegration {
+                              display: flex;
+                              justify-content: center; /* centers horizontally */
+                              align-items: center; /* centers vertically */
+                              height: 60vh;
+                              margin: 10px;
+                              width: 100%;
+                              margin-top: 40px;
+                              position: relative;
+                              text-align: center;
+                            }
+                        
+                           
+                                  
+                        /* ====================== iot integration =-============================= */
+                        .valuedelivered-maindiv-iotintegration {
+                          display: flex;
+                          justify-content: center; /* centers horizontally */
+                          align-items: center; /* centers vertically */
+                          height: 60vh;
+                          margin: 10px;
+                          margin-top: 80px;
+                          width: 100%;
+                          position: relative;
+                          text-align: center;
+                        }
+                        
+                        .valuedelivered-firstdiv-iotintegration,
+                        .valuedelivered-seconddiv-iotintegration,
+                        .valuedelivered-thirddiv-iotintegration {
+                          height: 80vh;
+                          width: 30%;
+                          padding: 20px;
+                          transition: transform 0.3s ease, box-shadow 0.3s ease;
+                          margin: 0 10px;
+                          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+                          border-radius: 5px; /* Optional: adds rounded corners */
+                        }
+                        
+                        
+                        .valuedelivered-firstdiv-iotintegration:hover,
+                        .valuedelivered-seconddiv-iotintegration:hover,
+                        .valuedelivered-thirddiv-iotintegration:hover {
+                          transform: scale(1.05); /* Slightly enlarges the div */
+                          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+                        }
+                        
+                        .valuedelivered-firstdiv-iotintegration img{
+                        height: 30vh;
+                        width: 100%;
+                        }
+                        .valuedelivered-firstdiv-iotintegration p{
+                          height: 25vh;
+                          padding: 20px;
+                          text-align: justify ;
+                         
+                        }
+                        .valuedelivered-seconddiv-iotintegration img{
+                          height: 30vh;
+                          width: 100%;
+                          }
+                          .valuedelivered-seconddiv-iotintegration p{
+                            height: 25vh;
+                            padding: 20px;
+                            text-align: justify;
+                          
+                          }
+                          .valuedelivered-thirddiv-iotintegration img{
+                            height: 30vh;
+                            width: 100%;
+                            }
+                            .valuedelivered-thirddiv-iotintegration p{
+                              height: 25vh;
+                              padding: 20px;
+                              text-align: justify;
+                            }
+                        
+                        
+                            .valuedelivered-secondmaindiv-iotintegration {
+                              display: flex;
+                              justify-content: center; /* centers horizontally */
+                              align-items: center; /* centers vertically */
+                              height: 60vh;
+                              margin: 10px;
+                              width: 100%;
+                              margin-top: 40px;
+                              position: relative;
+                              text-align: center;
+                            }
+                        
+                           
+                                  
+
+
+
+
+
+
+
+
+
+
+
+
+                     /*=========================purvey warehousemanagement product ddropdown=============================================  */
+                     .firstdiv-purveywarehousemanagementsystem {
+                      display: flex;
+                      width: 100%; /* Ensure it takes full width of the container */
+                      align-items: stretch; /* Ensures both divs are equal height */
+                      
+                    }
+
+    /*============================= iot masnagement===================================  */
+    .inventorymanagement-starting {
+      height: 35vh;
+      width: 100%;
+      background-image: url('../Assets/bluewhitebg.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+    /* =================blogs============================ */
+    .blog-para{
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+    }
+
+
+
+ /* ===============hexagon shape=================== */
+ 
+.dodeca, .dodeca div {
+  margin: 0px  ;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height:300px;
+}
+.dodeca {
+  margin-left: 90px;
+  margin-top:40px;
+  transform: rotate(120deg);
+}
+.dode1 {
+  transform: rotate(-60deg);
+}
+.dode2 {
+  transform: rotate(-60deg);
+}
+
+
+/* ================diamond shape--------------------- */
+
+
+
+/* .shape-outer {
+  display: flex;
+  flex-shrink: 0;
+  height: calc(50px + 4vw);
+  width: calc(50px + 20vw);
+  margin: 25px;
+  background: linear-gradient(to right, green,blue);
+}
+
+.shape-inner {
+  height: calc(30px + 4vw);
+  width: calc(30px + 20vw);
+  background: url('../Assets/cuttingedge.webp')
+    no-repeat center;
+  background-size: cover;
+  margin: auto;
+} */
+
+
+
+
+
+
+
+
+
+.sign-right {
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.valuedelivered-maindiv-workforcemanagement {
+  display: flex;         /* Use Flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  gap: 20px;            /* Space between each section */
+}
+
+.valuedelivered-firstdiv-workforcemanagement,
+.valuedelivered-seconddiv-workforcemanagement,
+.valuedelivered-thirddiv-workforcemanagement,
+.valuedelivered-fourthdiv-workforcemanagement {
+  display: flex;         /* Use Flexbox for each item */
+  align-items: center; 
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  width: 80%;
+  margin-left: 130px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  border-radius: 5px;  /* Center items vertically */
+}
+
+.valuedelivered-firstdiv-workforcemanagement img,
+.valuedelivered-seconddiv-workforcemanagement img,
+.valuedelivered-thirddiv-workforcemanagement img,
+.valuedelivered-fourthdiv-workforcemanagement img {
+  width: 50vh;         /* Set a specific width for images */
+  height: auto;         /* Maintain aspect ratio */
+  margin-right: 20px;   /* Space between image and text */
+  /* Optional: adds rounded corners */
+}
+
+.content {
+  max-width: 600px;     /* Limit content width */
+}
+
+
+.valuedelivered-firstdiv-workforcemanagement:hover,
+.valuedelivered-seconddiv-workforcemanagement:hover,
+.valuedelivered-thirddiv-workforcemanagement:hover {
+  transform: scale(1.05); /* Slightly enlarges the div */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+
+
+
+
+
+
+
+
+/* ------------blogs--------------------- */
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+.subtitle{
+font-size: 0.85rem;
+font-weight: 700;
+margin: 0;
+color: #1792d2;
+letter-spacing: 0.05em;
+font-family: 'Ubuntu Bold', sans-serif;
+}
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+  font-size: .875rem;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+.article-info {
+  margin: 2em 0;
+}
+header{
+padding: 2em 0;
+text-align: center;
+background: #f0f8ff;
+font-family: sans-serif;
+margin-bottom: 3em;
+}
+.container-flex{
+max-width: 70vw;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+margin-bottom: 1em;
+}
+nav ul{
+display: flex;
+justify-content: center;
+list-style: none;
+padding: 0;
+}
+nav li{
+margin: 0 1em;
+}
+nav a{
+text-decoration: none;
+color: #707070;
+font-weight: 700; 
+padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus{
+color: #143774;
+border-bottom: 1px solid black;
+transition: .3s ease;
+}
+
+img{
+max-width: 100%;
+display: block;
+}
+main{
+max-width: 75%;
+}
+.article-body{
+width: 100%;
+text-align: justify;
+}
+.sidebar{
+max-width: 23%;
+}
+footer {
+  background:#143774;
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+footer a{
+text-decoration: none;
+color: white;
+}
+footer a:hover{
+text-decoration: underline;
+color: white;
+}
+@media (max-width:1050px){
+.container-flex{
+  flex-direction: column;
+}
+.site-title, .subtitle{
+  width: 100%;
+}
+main{
+  max-width: 100%;
+}
+.sidebar{
+  max-width: 100%;
+}
+
+}
+@media (max-width: 500px){
+nav ul{
+  display: flex;
+  flex-direction: column;
+}
+nav li{
+  margin: 0.5em 0;
+}
+}
+
+/* articles */
+.article-featured {
+  border-bottom: #707070 1px solid;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+.article-recent-secondary {
+  order: 1;
+}
+
+@media (min-width: 675px) {
+  .article-recent {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  .article-recent-main {
+      width: 68%;
+  }
+  
+  .article-recent-secondary {
+      width: 30%;
+  }
+}
+

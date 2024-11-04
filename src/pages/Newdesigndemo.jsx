@@ -9,7 +9,7 @@ import work4 from '../Assets/work4.jpg'
 import work2 from '../Assets/work2.webp'
 import { useNavigate } from 'react-router-dom';
 import work3 from '../Assets/work3.jpg'
-
+import './Responsive.css'
 import './newdesigndemo.css'
 
 function Newdesigndemo() {

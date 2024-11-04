@@ -236,3 +236,719 @@
         font-size: 1.5em; /* Smaller font size on small screens */
     }
 }
+
+
+
+
+
+/* ------------------apora fulfillmrnt--------------------- */
+@media(max-width:1024px){
+    .aporafulfillment-starting{
+        height: 35vh;
+        width: 100%;
+        background-image: url('../Assets/Grey BG Dark.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
+        /* Centerng the text vertically and horizontally */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Arrange children vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /*  Center items vertically */
+      }
+      .valuedelivered-section-aporafulfillment{
+        display: block;
+        margin-top: 245px;
+      }
+      .container-aporafulfill{
+        margin-top: 30px;
+      }
+      .service_para {
+        margin: 117px 0;
+        height: 20vh;
+        font-size: 14px;
+        text-align: justify;
+    }
+     
+}
+@media(max-width:768px){
+    .aporafulfillment-starting{
+        height: 35vh;
+        width: 100%;
+        background-image: url('../Assets/Grey BG Dark.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
+        /* Centerng the text vertically and horizontally */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Arrange children vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /*  Center items vertically */
+      }
+      .valuedelivered-section-aporafulfillment{
+        display: block;
+        margin-top: 700px;
+      }
+      .container-aporafulfill{
+        margin-top: 30px;
+      }
+      .service_para {
+        margin: 117px 0;
+        height: 40vh;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .service:hover {
+        background: linear-gradient(to bottom, #303ef7, #28a745);
+        color: #fff;
+        transform: scale(1.02);
+        padding: 10px;
+        border-radius: 5px;
+      }
+     
+}
+@media(max-width:425px){
+    .gradient-text {
+        font-size: 20px;
+    }
+    .gradient-text-APORA {
+        font-size: 38px;
+        margin-top: 900px;
+    }
+    .modal-popup-aporafulfillment{
+        padding: 30px;
+       
+    }
+   
+    .aporafulfillment-starting{
+        height: 35vh;
+        width: 100%;
+        background-image: url('../Assets/Grey BG Dark.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
+        /* Centerng the text vertically and horizontally */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Arrange children vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /*  Center items vertically */
+      }
+      .valuedelivered-section-aporafulfillment{
+        display: block;
+        margin-top: 700px;
+      }
+      .container-aporafulfill{
+        margin-top: 30px;
+      }
+      .service_para {
+        margin: 117px 0;
+        height: 40vh;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .service:hover {
+        background: linear-gradient(to bottom, #303ef7, #28a745);
+        color: #fff;
+        transform: scale(1.02);
+        padding: 10px;
+        border-radius: 5px;
+      }
+    
+        .row-aporafulfill {
+          flex-direction: column; /* Stack items vertically */
+          align-items: stretch; /* Make items take full width */
+        }
+      
+        .row-aporafulfill .service {
+          width: 100%; /* Full width for each service item */
+          max-width: none; /* Remove max-width constraint */
+          margin-bottom: 20px; /* Maintain spacing between items */
+        }
+      
+        .container-aporafulfill h1 {
+          font-size: 24px; /* Adjust heading size for smaller screens */
+          margin-bottom: 40px; /* Adjust margin for heading */
+        }
+      
+        .service .service_heading {
+          font-size: 18px; /* Adjust heading size for smaller screens */
+        }
+      
+        .service_para {
+          height: auto; /* Allow paragraph height to adjust based on content */
+        }
+      
+}
+
+
+@media(max-width:375px){
+    .gradient-text{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* --------------------service page----------------------------- */
+/* Base styles remain the same */
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .shortcontent-maindiv {
+      flex-direction: column;
+      height: auto;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        
+    }
+    .heading2-servicepage {
+        margin: 0px auto;
+        font-size: 25px;
+        margin-top: 30px;
+        font-family: 'Good Times';
+        text-shadow: 2px 2px 2px rgba(41, 40, 40, 0.07), 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.h6-servicepage {
+    width: 50%;
+}
+.timeline{
+    margin-left: 269px;
+}
+
+.thirddiv-servicepage {
+margin-top: 20px;
+}
+.bluebg-servicepage-main-div {
+    position: relative;
+    text-align: left;
+    margin-top: 183px;
+}
+.fourthdiv-servicepage {
+    position: absolute;
+    top: 0px;
+    font-size: 18px;
+    padding: 40px;
+    color: rgb(255, 247, 247);
+    text-align: justify;
+    justify-content: center;
+}
+    .service-button {
+        display: flex   ;
+        padding: 8px 15px;
+        font-size: 14px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+    .shortcontent-leftdiv,
+    .shortcontect-right-div {
+      position: static;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .service-heading {
+      font-size: 24px;
+      top: 15%;
+      left: 12%;
+    }
+  
+    .button-container {
+      top: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .centered-image-servicepage {
+      height: 25vh;
+    }
+  
+    .service-heading {
+      font-size: 20px;
+      left: 5%;
+    }
+  
+    .button-container {
+      left: 5%;
+      flex-direction: column;
+    }
+  
+    .service-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .thirddiv-content {
+      padding: 20px;
+      font-size: 16px;
+    }
+  
+    .heading-servicepage {
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .greenbg-servicepage-main-div,
+    .bluebg-servicepage-main-div {
+      margin-top: 20px;
+    }
+  
+    .service-heading {
+      font-size: 18px;
+      top: 10%;
+    }
+  
+    .centered-image-servicepage {
+      height: 20vh;
+    }
+  
+    .button-container {
+      top: 45%;
+    }
+  
+    .service-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .h6-servicepage {
+      margin-top: 50px;
+      font-size: 16px;
+    }
+  
+    .timeline:before {
+      height: 30vh;
+    }
+  
+    .secondsec-servicepage {
+      padding: 10px 15px;
+    }
+  
+    .heading2-servicepage {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  
+    .thirddiv-servicepage {
+      padding: 15px;
+    }
+  
+    .fourthdiv-servicepage {
+      padding: 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .service-heading {
+      font-size: 16px;
+    }
+  
+    .button-container {
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+  
+    .service-button {
+      font-size: 11px;
+      padding: 5px 10px;
+    }
+  
+    .heading-servicepage {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  }
+  
+  /* Additional Timeline Responsiveness */
+  @media screen and (max-width: 660px) {
+    .timeline {
+      width: 100%;
+      margin: 20px auto;
+    }
+  
+    .direction-l,
+    .direction-r {
+      width: 100%;
+      padding: 0 15px;
+    }
+  
+    .flag-wrapper {
+      display: block;
+    }
+  
+    .desc {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+  }
+  
+  /* Ensure text remains readable on very small screens */
+  @media screen and (max-width: 375px) {
+    .desc {
+      font-size: 12px;
+    }
+  
+    .flag {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  
+    .time {
+      font-size: 12px;
+    }
+  }
+  
+  /* Handle landscape orientation */
+  @media screen and (max-height: 500px) and (orientation: landscape) {
+    .centered-image-servicepage {
+      height: 50vh;
+    }
+  
+    .service-heading {
+      top: 25%;
+      left: 16%;
+    }
+  
+    .button-container {
+      top: 65%;
+      left: 16%;
+      flex-direction: row;
+    }
+  }
+
+
+
+
+
+
+  /*----------------ntegration oage==========================  */
+  /* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .valuedelivered-firstdiv-iotintegration,
+  .valuedelivered-seconddiv-iotintegration,
+  .valuedelivered-thirddiv-iotintegration {
+    width: 45%; /* Adjusts width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .valuedelivered-firstdiv-iotintegration,
+  .valuedelivered-seconddiv-iotintegration,
+  .valuedelivered-thirddiv-iotintegration {
+    width: 90%; /* Adjusts width for small screens */
+    margin: 10px auto; /* Centers the divs */
+  }
+}
+
+@media (max-width: 480px) {
+  .valuedelivered-firstdiv-iotintegration,
+  .valuedelivered-seconddiv-iotintegration,
+  .valuedelivered-thirddiv-iotintegration {
+    height: auto; /* Makes divs height auto on very small screens */
+  }
+}
+@media (max-width: 1024px) {
+  .row-crossdocking .service-crossdocking {
+    max-width: 30%; /* Adjust width for medium screens */
+  }
+
+  .container-crossdocking h1 {
+    font-size: 28px; /* Slightly reduce font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .row-crossdocking .service-crossdocking {
+    max-width: 45%; /* Adjust width for small screens */
+  }
+
+  .container-crossdocking h1 {
+    font-size: 26px; /* Slightly reduce font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .row-crossdocking .service-crossdocking {
+    max-width: 90%; /* Adjust width for very small screens */
+    margin: 0 auto; /* Center the services */
+  }
+
+  .container-crossdocking h1 {
+    font-size: 24px; /* Further reduce font size */
+  }
+
+  .service_para-crossdocking {
+    height: auto; /* Make paragraph height auto for small screens */
+  }
+}
+
+
+
+
+@media(max-width:768px){
+  .primary-heading {
+    width: 100%; /* Make the image responsive */
+  height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.highlight-text {
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  color: #0f0f0f;
+  font-weight: bold;
+  display: block;
+}
+.subheading {
+  font-size: 10px;
+  color: #0d0d0e;
+  letter-spacing: 1px;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.cta {
+  font-size: 12px;
+}
+.font-highlight-deconsol {
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 500;
+}
+.deconsolidation-paragraph {
+  font-size: 12px;
+}
+.backgroundimg-deconsolidation {
+  height: 100vh; /* Adjust height for smaller screens */
+  background-size: contain; /* Change to contain to ensure the image fits */
+}
+
+}
+
+
+@media (max-width: 768px) {
+  .backgroundimg-deconsolidation {
+    width: 100%; /* Make the image responsive */
+  height: auto;/* Adjust height for smaller screens */
+    background-size: contain; /* Ensure the image fits */
+  }
+
+  .block-list-deconsolidation {
+    padding: 0; /* Remove padding for smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .deconsolidation-img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+.backgroundimg-apora{
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+
+}
+.aporahomepage-image{
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+
+}
+  .ms-4 {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    text-align: center; /* Center-align description text */
+  }
+  .AporaHomepage{
+    margin-top: 20px;
+  }
+  .IndustriesServe-page{
+    margin-top: 20px;
+  }
+}
+
+
+
+@media(max-width:425px){
+  .backgroundimg-deconsolidation {
+    width: 100%; /* Make the image responsive */
+  height: auto ;/* Adjust height for smaller screens */
+    background-size: contain; /* Ensure the image fits */
+   left: 30px;
+  }
+  .highlight-text{
+    font-size: 14px;
+
+  }
+  .cta{
+    font-size: 8px;
+  }
+  .main-title{
+    font-size: 15px;
+  }
+  .subheading{
+    font-size: 3px;
+  }
+  .first-content {
+    margin-top: 30px;
+    height: 25vh;
+}
+}
+
+
+@media(max-width:768px){
+  .aboutpage-starting {
+    height: 43vh;
+  }
+  .gradient-text{
+    font-size: 12px;
+  }
+  .valuedelivered-section-aporafulfillment{
+    margin-top: 1750px;
+  }
+}
+@media(max-width:768px){
+  
+  .firstdiv-multichannelintegration {
+    display: block;
+    width: 100%;
+    align-items: stretch;
+    margin-top: 900px;
+}
+.multichannelintegration-image img {
+  width: auto;
+  height: 25vh;
+}
+.multichannelintegration-content{
+margin-top: -30px;
+}
+}
+
+
+
+
+/* ========== */
+@media (max-width: 768px) {
+  .valuedelivered-maindiv-orderprocessing {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: stretch;   /* Stretch to full width */
+      gap: 10px;              /* Reduce gap on smaller screens */
+  }
+
+  .valuedelivered-firstdiv-orderprocessing,
+  .valuedelivered-seconddiv-orderprocessing,
+  .valuedelivered-thirddiv-orderprocessing,
+  .valuedelivered-fourthdiv-orderprocessing {
+      width: 90%;             /* Increase width on mobile for better spacing */
+      margin-left: auto;      /* Centering for smaller screens */
+      margin-right: auto;     /* Centering for smaller screens */
+      padding: 10px;         /* Reduce padding for smaller screens */
+      flex-direction: column; /* Stack image and text vertically on mobile */
+      align-items: center;     /* Center items in the column layout */
+  }
+
+  .valuedelivered-firstdiv-orderprocessing img,
+  .valuedelivered-seconddiv-orderprocessing img,
+  .valuedelivered-thirddiv-orderprocessing img,
+  .valuedelivered-fourthdiv-orderprocessing img {
+      width: 100%;           /* Allow images to scale responsively */
+      height: 30vh;          /* Maintain aspect ratio of images */
+      margin-bottom: 10px;   /* Space below images in vertical layout */
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .valuedelivered-maindiv-multiintegration {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: stretch;   /* Stretch to full width */
+      height: auto;           /* Allow main div to adjust height based on content */
+      gap: 10px;              /* Reduce gap between items on smaller screens */
+  }
+  .valuedelivered-maindiv-multiintegration p{
+    font-size: 12px;
+  }
+
+  .valuedelivered-firstdiv-multiintegration,
+  .valuedelivered-seconddiv-multiintegration,
+  .valuedelivered-thirddiv-multiintegration,
+  .valuedelivered-fourthdiv-multiintegration,
+  .valuedelivered-fifthdiv-multiintegration {
+      width: 90%;             /* Increase width on mobile for better spacing */
+      margin-left: auto;      /* Centering for smaller screens */
+      margin-right: auto;     /* Centering for smaller screens */
+      padding: 10px;         /* Reduce padding for smaller screens */
+      flex-direction: column; /* Stack image and text vertically on mobile */
+      align-items: center;     /* Center items in the column layout */
+      height: 60vh;           /* Allow content to dictate height */
+  }
+
+  .valuedelivered-firstdiv-multiintegration img,
+  .valuedelivered-seconddiv-multiintegration img,
+  .valuedelivered-thirddiv-multiintegration img,
+  .valuedelivered-fourthdiv-multiintegration img,
+  .valuedelivered-fifthdiv-multiintegration img {
+      width: 40;           /* Allow images to scale responsively */
+      height: auto;          /* Maintain aspect ratio of images */
+      margin-bottom: 10px;   /* Space below images in vertical layout */
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+ 
+  .valuedelivered-maindiv-workforcemanagement {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: stretch;   /* Stretch to full width */
+      gap: 10px;              /* Reduce gap between items on smaller screens */
+  }
+
+  .valuedelivered-firstdiv-workforcemanagement,
+  .valuedelivered-seconddiv-workforcemanagement,
+  .valuedelivered-thirddiv-workforcemanagement,
+  .valuedelivered-fourthdiv-workforcemanagement {
+      width: 90%;             /* Increase width on mobile for better spacing */
+      margin-left: auto;      /* Centering for smaller screens */
+      margin-right: auto;     /* Centering for smaller screens */
+      padding: 10px;         /* Reduce padding for smaller screens */
+      flex-direction: column; /* Stack image and text vertically on mobile */
+      align-items: center;     /* Center items in the column layout */
+      height: auto;           /* Allow content to dictate height */
+  }
+
+  .valuedelivered-firstdiv-workforcemanagement img,
+  .valuedelivered-seconddiv-workforcemanagement img,
+  .valuedelivered-thirddiv-workforcemanagement img,
+  .valuedelivered-fourthdiv-workforcemanagement img {
+      width: 40;           /* Allow images to scale responsively */
+      height: auto;          /* Maintain aspect ratio of images */
+      margin-bottom: 10px;   /* Space below images in vertical layout */
+  }
+}
+
+@media(max-width:768px){
+  .text-center {
+    text-align: justify;         /* Center vertically (if needed) */
+     width: 30%;     width: 300px;
+     margin-left: 15px;              /* Full width to allow centering */
+ }
+}

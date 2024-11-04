@@ -2,9 +2,13 @@ import React from 'react'
 import royalbluebg from '../Assets/royalbluebg.jpg'
 import aporablack from '../Assets/apora_black.png'
 import Card from 'react-bootstrap/Card';
+import Nav from 'react-bootstrap/Nav';
+import { useNavigate } from 'react-router-dom';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Container,Row,Col,Modal,Button } from 'react-bootstrap';
-import { useState } from 'react';
+import { useState,useEffect} from 'react';
+import './Responsive.css'
+import Chart from './Chart';
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
@@ -61,12 +65,50 @@ function AporaFulfillmentautomation() {
     setShowModal(true);
   };
 
+
+
+
+
+
+
+  const [activeTab, setActiveTab] = useState(''); // Set default active tab
+
+  const handleSelect = (eventKey) => {
+    setActiveTab(eventKey);
+  };
+  const navigate=useNavigate('')
+  const handleMultichannelintegration=()=>{
+    navigate('/multichannelintegration')
+  } 
+  const handleOrderprocessing=()=>{
+    navigate('/orderprocessing')
+  }
+
+
+
+  useEffect(() => {
+    // Get the modal backdrop element
+    const backdrop = document.querySelector('.modal-backdrop');
+
+    // Add blur class when the modal is shown
+    if (backdrop) {
+      backdrop.classList.add('modal-backdrop-blur');
+    }
+
+    // Clean up to remove blur when the modal is hidden
+    return () => {
+      if (backdrop) {
+        backdrop.classList.remove('modal-backdrop-blur');
+      }
+    };
+  }, [showModal]);
+
 // ==================================================================
   return (
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
  <div style={{height:"90vh"}}>
- <div className='aboutpage-starting'>
+ <div className='starting-picklistgeneration  '>
     <h1 className="gradient-text">Bring In One Of Its Kind <br /></h1>
     <h3 className="gradient-text">Solution</h3>
 
@@ -74,6 +116,21 @@ function AporaFulfillmentautomation() {
     <h6 className='gradient-text-h6'><img src={aporablack} alt="" style={{height:"80px"}}/></h6>
     </div>
     </div>
+
+<div style={{display:"flex",justifyContent:"center",textAlign:"center"}}>
+
+
+<div style={{height:"20vh"}} className='mt-5'>
+<Chart/>
+ </div>
+</div>
+
+
+
+
+
+
+
     <div style={{height:"50vh"}}>
 
 
@@ -83,7 +140,7 @@ function AporaFulfillmentautomation() {
 
 
     
-    <Container>
+    <Container className='modal-popup-aporafulfillment mt-3'>
       <Row className="justify-content-center">
         {cardContents.map((content, index) => (
           <Col lg={3} className="d-flex justify-content-center" key={index}>
@@ -108,32 +165,42 @@ function AporaFulfillmentautomation() {
 
       {/* Modal Component */}
       <Modal
-        size="lg"
-        className='modal-background-aporafulfil'
-        show={showModal}
-        onHide={() => setShowModal(false)}
-        aria-labelledby="example-modal-sizes-title-lg"
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{modalContent.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body style={{ padding: 0 }}>
-          <img 
-            src={modalContent.image} 
-            alt="" 
-            style={{ width: "100%", height: "50vh", display: "block" }} 
-          />
-          <br />
-          <p className='text-white'>{modalContent.body}</p>
-        </Modal.Body>
-      </Modal>
+      size="lg"
+      className='modal-background-aporafulfil'
+      show={showModal}
+      onHide={() => setShowModal(false)}
+      aria-labelledby="example-modal-sizes-title-lg"
+      style={{ backdropFilter: "blur(8px)" }}
+    >
+      <Modal.Header closeButton>
+        <Modal.Title>{modalContent.title}</Modal.Title>
+      </Modal.Header>
+      <Modal.Body style={{ padding: 0, position: 'relative' }}>
+        <img 
+          src={modalContent.image} 
+          alt="" 
+          style={{ 
+            width: "100%", 
+            height: "50vh", 
+            display: "block", 
+            border: "5px solid #fff", // Add a white border
+            borderRadius: "8px", // Optional: for rounded corners
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.5)", // Optional: adds depth
+          }} 
+        />
+        <div>
+          <p className="modal-content-text text-white">{modalContent.body}</p>
+        </div>
+      </Modal.Body>
+    </Modal>
     </Container>
     </div>
  </div>
 
 
-    <div className='value-del-aporafulfillment'>
-    <h1 >Value Delivered</h1>
+  <div className='valuedelivered-section-aporafulfillment'>
+  <div className='value-del-aporafulfillment'>
+    <h1 style={{fontSize:"30px",marginTop:"200px"}}>Value Delivered</h1>
     </div>
 <div class="container-aporafulfill">
    
@@ -171,9 +238,10 @@ function AporaFulfillmentautomation() {
 
 </div>
 </div>
+  </div>
 
 
- 
+
     </div>
   )
 }

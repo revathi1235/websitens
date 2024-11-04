@@ -11,19 +11,18 @@
   font-style: normal;
 }
   /* ---------------------------------------- */
-  .responsive-list {
-    display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-    letter-spacing: 3px;
-    /* font-family: 'Good Times'; */
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
-    list-style-type: none;
-    border-radius: 5px; /* Optional: Adds rounded corners to the list */
-  }
+    .responsive-list {
+      display: flex;
+      justify-content: space-between;
+    
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 3px;
+      
+      list-style-type: none;
+      border-radius: 5px; 
+    }
   
   .responsive-list li {
     flex: 1 1 150px; /* Adjust the base size as needed */
@@ -121,19 +120,31 @@
   color: black; /* Optional: change text color */
 }
 
-.responsive-list {
+/* .responsive-list {
   list-style-type: none;
   padding: 0;
-}
+} */
 
-.responsive-list li {
+/* .responsive-list li {
   display: inline-block;
-  margin: 20px ; /* Adjust spacing between headers */
+  margin: 20px ;
   cursor: pointer;
+} */
+
+
+
+
+
+
+@media(max-width:768px){
+  .responsive-list {
+    display: block;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 3px;
+    list-style-type: none;
+    border-radius: 5px;
 }
-
-
-
-
-
-
+}
