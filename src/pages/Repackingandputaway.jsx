@@ -8,6 +8,7 @@ import efficiency from '../Assets/Efficiency.svg'
 import './commoncss.css'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
+import Footer from '../components/Footer'
 
 function Repackingandputaway() {
   const navigate=useNavigate()
@@ -114,7 +115,7 @@ const handlePurveywms=()=>{
 
 
 
-   <div className='firstdiv-multichannelintegration ' >
+   {/* <div className='firstdiv-multichannelintegration ' >
     <div className='multichannelintegration-image'>
         <img src={multichannelintegration} alt="" />
     </div>
@@ -125,9 +126,18 @@ const handlePurveywms=()=>{
           </h4>
           Our cutting-edge PURVEY Warehouse Management System introduces a powerful Repacking & Put Away module designed to optimize your warehouse operations. With our advanced features and user-friendly interface, you can revolutionize your repacking and storage processes for enhanced efficiency and productivity.
           Our Repacking & Put Away module simplifies the repacking process by providing intuitive tools to manage and track repackaged items. Seamlessly break down or combine products, update packaging information, and maintain accurate inventory records. This ensures precision in order fulfilment and inventory management.            </p></div>
+   </div> */}
+
+<div className='firstdiv-multichannelintegration ' >
+    <div className='multichannelintegration-image wrapper'>
+        <img src={multichannelintegration} alt="" className='image--cover'/>
+    </div>
+    <div className='multichannelintegration-content'>
+      <h2 >Repacking and Putaway</h2>
+        <p style={{textAlign:"justify",padding:"40px"}}> Our cutting-edge PURVEY Warehouse Management System introduces a powerful Repacking & Put Away module designed to optimize your warehouse operations. With our advanced features and user-friendly interface, you can revolutionize your repacking and storage processes for enhanced efficiency and productivity.
+        Our Repacking & Put Away module simplifies the repacking process by providing intuitive tools to manage and track repackaged items. Seamlessly break down or combine products, update packaging information, and maintain accurate inventory records. This ensures precision in order fulfilment and inventory management.    </p>
+    </div>
    </div>
-
-
 
 
 
@@ -141,38 +151,33 @@ const handlePurveywms=()=>{
 <div className='seconddiv-multichannelintegration'>
     <h1>Features</h1>
 </div>
-<Container fluid>
+<Container  className='seconddiv-orderprocessing-container'>
  
 
-    <div className='valuedelivered-maindiv-repackingandputaway'>
-  <div className='valuedelivered-firstdiv-repackingandputaway'>
-    <img src={improveresouceutilisation} alt="" />
-    <h6>Streamlining Operations and Maximizing Storage Capacity</h6>
-    <p >Say goodbye to wasted storage space and cumbersome searching. Our WMS software's Repacking & Put Away module utilizes intelligent algorithms to allocate the optimal storage location for repacked items. This maximizes your warehouse's storage capacity and minimizes retrieval times, streamlining your operations.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-repackingandputaway'>
-    <img src={efficiency} alt="" />
-    <h6>Organized Storage & Tracking Efficiency </h6>
-    <p>Take control of your storage areas with our comprehensive location management capabilities. Define and manage location hierarchies, assign specific storage areas for repacked items, and easily track the availability and capacity of each location. No more time wasted on searching for misplaced items.
+    <div className='valuedelivered-maindiv-orderprocessing' >
 
-</p>
-  </div>
-  <div className='valuedelivered-thirddiv-repackingandputaway'>
-    <img src={improvedorderaccuracy} alt="" />
-    <h6>Intelligent Put-Away Strategies </h6>
-    <p>Our software offers a range of intelligent put-away strategies customized to your unique needs. Whether you prefer random put-away, zone-based storage, or dynamic slotting, our module seamlessly implements these strategies. Improve your operational efficiency by leveraging the optimal method for your warehouse.</p>
-  </div>
-  <div className='valuedelivered-firstdiv-repackingandputaway'>
+  <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src={improveresouceutilisation} alt="" />
-    <h6>Comprehensive Tasks Assignment</h6>
-    <p >Empower your warehouse operators with clear instructions through our task assignment feature. Our Repacking & Put Away module generates comprehensive tasks displayed on handheld devices or management terminals. These tasks outline the repacked items to be stored and their designated locations, ensuring accuracy and productivity.</p>
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
+  </div>
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    <img src={efficiency} alt="" />
+    {/* <h6>Reduced Complexity</h6> */}
+    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
+  </div>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src={improvedorderaccuracy} alt="" />
+    {/* <h6>Increased Productivity</h6> */}
+    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
+  </div>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src={improvedorderaccuracy} alt="" />
+    {/* <h6>Improved Resource Utilization</h6> */}
+    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
   </div>
 </div>
-
-<br />
-
 </Container>
-
 
 
 <Container >
@@ -237,7 +242,7 @@ const handlePurveywms=()=>{
            
             <h2 class="service_heading-repackingandputaway">Increased Flexibility</h2>
             <p class="service_para-repackingandputaway">
-            Repacking & Put Away in WMS provides the flexibility to break down or combine products as needed, allowing you to adapt to changing customer demands and market trends. This flexibility enables you to efficiently manage product variations, bundle products for promotions, or customize orders based on customer preferences.
+            Repacking & Put Away in WMS provides the flexibility to break down or combine products as needed, allowing you to adapt to changing customer demands and market trends. This flexibility enables you to efficiently manage  or customize orders based on customer preferences.
             </p>
         </div>
       
@@ -248,6 +253,8 @@ const handlePurveywms=()=>{
 </div>
   </div>
 
+
+<Footer/>
 
     </div>
   )

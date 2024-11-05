@@ -15,6 +15,7 @@ import './Responsive.css'
 import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
 import Chart  from './Chart';
+import Footer from '../components/Footer';
 
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
@@ -189,52 +190,55 @@ function Ecommerceintegration() {
 
 
 
-   <div className='container mt-5'>
-      <div className='d-flex justify-content-center'>
-        <h2 className='gradient-text'>Features</h2>
-      </div>
-      <div className='row justify-content-center '>
-        {/* Card 1 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Intelligent Order Analysis</h5>
+   <div className="container mt-5 valuedelivered-workforcemanagement">
+        <div className="d-flex justify-content-center">
+          <h2 className="gradient-text">Value Delivered</h2>
+        </div>
+        <div className="row justify-content-center ">
+          {/* Card 1 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Enhanced Efficiency</h5>
             <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
-            <div className='bio-orderprocessing'>
-              <p>The AI-powered order synchronization system utilizes advanced algorithms to analyse order similarities and content item proximities within the warehouse. By understanding the relationships between orders and item locations, the system intelligently synchronizes orders to minimize the number of picklists required.</p>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>AI-powered workforce optimization leverages advanced algorithms to intelligently allocate tasks and resources. By analysing real-time data such as order volumes, item locations, and employee performance, the system optimizes the assignment of picking tasks to the workforce. This automation streamlines the picking process, reduces travel time, and increases overall efficiency.</p>
             </div>
           </div>
-        </div>
+          </div>
 
-        {/* Card 2 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Real-Time Data Integration</h5>
-            <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Inventory Management' />
-            </div>
-            <div className='bio-orderprocessing'>
-              <p>The system seamlessly integrates with existing warehouse management systems, to receive real-time data on order details, item locations, and availability. This integration ensures accurate and up-to-date information, enabling the system to make informed decisions for order synchronization.</p>
-            </div>
-          </div>
-        </div>
+          {/* Card 2 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Improved Productivity
 
-        {/* Card 3 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Customizable Synchronization Rules</h5>
+</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Real-Time Analytics' />
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
-            <div className='bio-orderprocessing'>
-              <p>The AI-powered order synchronization system considers criteria such as item similarity, item proximity, or order priorities to tailor the synchronization process to their unique needs.</p>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14 px"}}>With AI-powered workforce optimization, organizations can unlock the full potential of their workforce. The system takes into account employee skills, experience, and availability to allocate tasks that align with individual strengths. By matching the right employees with the right tasks, productivity is maximized, and employees are empowered to perform at their best.</p>
             </div>
           </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Adaptive Planning</h5>
+            <div className='image-crop-orderprocessing'>
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+            </div>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>The dynamic nature of warehousing requires flexible planning and resource allocation. AI-powered workforce optimization adapts to changing circumstances by continuously analysing data and adjusting workforce assignments accordingly. Whether it's a sudden increase in order volumes or a change in order priorities, the system optimizes workforce planning to meet shifting demands effectively
+
+</p>
+            </div>
+          </div>
+          </div>
         </div>
-        
       </div>
-    </div>
 
 
 
@@ -274,7 +278,9 @@ function Ecommerceintegration() {
 
 
 
-
+<div className='resp-footer'>
+  <Footer/>
+</div>
 
     </div>
   )

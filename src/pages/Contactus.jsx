@@ -2,7 +2,8 @@ import React from 'react'
 import './contactus.css'
 import { Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMailBulk, faPhone,faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../components/Footer';
 function Contactus() {
   return (
     <div className='contact-section mt-2'>
@@ -17,8 +18,18 @@ function Contactus() {
               </div>
               <div class="contact-info-text">
                 <h2>address</h2>
-                <span>1215 Lorem Ipsum, Ch 176080 </span> 
-                <span>Chandigarh , INDIA</span> 
+                <span style={{ color: "grey" }}>
+                      <FontAwesomeIcon
+                        icon={faLocationDot}
+                        style={{ color: "white" }}
+                      />{" "}
+                      Malambuzha Rd,
+                     
+                      Olavakkode,<br />
+                     
+                      Palakkad Kerala 
+                      678002
+                    </span>
               </div>
             </div>            
           </div>          
@@ -96,7 +107,8 @@ function Contactus() {
        <div class="col-md-4">  
          
           <div class="contact-page-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15676.981072908808!2d76.63954849848753!3d10.792517629713958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d10.7902659!2d76.652822!4m5!1s0x3ba86fe1b9379cdd%3A0x295ae1ce9e81c364!2snacre%20system!3m2!1d10.799584399999999!2d76.64686069999999!5e0!3m2!1sen!2sin!4v1730199327769!5m2!1sen!2sin" width="400" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          {/* <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15676.981072908808!2d76.63954849848753!3d10.792517629713958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d10.7902659!2d76.652822!4m5!1s0x3ba86fe1b9379cdd%3A0x295ae1ce9e81c364!2snacre%20system!3m2!1d10.799584399999999!2d76.64686069999999!5e0!3m2!1sen!2sin!4v1730199327769!5m2!1sen!2sin" width="400" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1530229867985!2d76.64428577481853!3d10.799589658766479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fe1b9379cdd%3A0x295ae1ce9e81c364!2sNacre%20System!5e0!3m2!1sen!2sin!4v1730780934340!5m2!1sen!2sin" width="400" height="350"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>          
         
         </div> 
@@ -104,6 +116,9 @@ function Contactus() {
       </div>
     </div>
   </section>
+
+
+  <Footer/>
     </div>
   )
 }

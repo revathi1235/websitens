@@ -15,6 +15,7 @@ import orderprocessing from '../Assets/orderprocessing.svg'
 import './Responsive.css'
 import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
@@ -267,7 +268,9 @@ function Orderprocessing() {
 
 
 
-
+<div className='resp-footer'>
+<Footer/>
+</div>
     </div>
   )
 }

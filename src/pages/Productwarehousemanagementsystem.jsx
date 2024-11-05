@@ -126,26 +126,15 @@ const Productwarehousemanagementsystem = () => {
 
 
 
-        <div className="firstdiv-purveywarehousemanagementsystem" style={{marginTop:"200px"}}>
-          <div className="multichannelintegration-image">
-            <img src={multichannelintegration} alt="" />
-          </div>
-          <div className="multichannelintegration-content">
-            <p style={{ padding: "40px" }}>
-              <h4 style={{ fontFamily: "Good times", lineHeight: "2.2rem" }}>
-                Purvey OMS- Order Management System
-              </h4>
-
-              <p style={{ textAlign: "justify" }}>
-                Purvey OMS, we understand the unique challenges faced by mobile
-                workforces when it comes to order management. To address these
-                challenges, we have developed a cutting-edge Field Order
-                Management Software that empowers your mobile workforce and
-                streamlines your order processes like never before.
-              </p>
-            </p>
-          </div>
-        </div>
+ <div className='firstdiv-multichannelintegration ' >
+    <div className='multichannelintegration-image wrapper'>
+        <img src={multichannelintegration} alt="" className='image--cover'/>
+    </div>
+    <div className='multichannelintegration-content'>
+      <h2 >Purvey OMS- Order Management System</h2>
+        <p style={{textAlign:"justify",padding:"40px"}}>Our WMS is designed to provide a comprehensive solution for all your warehouse management needs. Whether you operate a small-scale facility or a large distribution centre, our scalable and flexible software can be tailored to meet your specific requirements. With Purvey WMS, you can streamline your operations, reduce errors, and enhance productivity, ultimately driving your business towards greater profitability.</p>
+    </div>
+   </div>
 
         <div className="container-service">
           {/* <div className="OurFormula_sectionHeading">Our Formula</div> */}
@@ -155,7 +144,7 @@ const Productwarehousemanagementsystem = () => {
                 color: "black",
                 textAlign: "center",
                 fontFamily: "pirulen",
-                marginTop:'100px'
+                marginTop:'10px'
               }}
             >
               Value Delivered
@@ -218,7 +207,7 @@ const Productwarehousemanagementsystem = () => {
                 ];
 
                 return (
-                  <div
+                  <div  style={{overflow:"hidden"}}
                     key={i}
                     className="WhatWeDo_whatWeDoWrap isScrollView"
                     data-scroll={true}
@@ -230,7 +219,7 @@ const Productwarehousemanagementsystem = () => {
                       <div className="WhatWeDo_boxContent">
                         <ul>
                           <li>
-                            <p>{descriptions[i]}</p>
+                            <p style={{fontSize:"1.3rem",width:"500px",color:'black',fontFamily:"bold"}}>{descriptions[i]}</p>
                           </li>
                         </ul>
                       </div>
@@ -244,7 +233,7 @@ const Productwarehousemanagementsystem = () => {
           <div style={{ height: "10vh" }}></div>
         </div>
       </div>
-      <div style={{ marginTop: "2000px" }}>
+      <div style={{ marginTop: "2100px" }}>
         <footer class="footer-section">
           <div class="container">
             <div class="footer-cta pt-5 pb-5">

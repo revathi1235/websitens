@@ -7,6 +7,7 @@ import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
+import Footer from '../components/Footer'
 
 function Purveydeconsolidation() {
   const navigate=useNavigate()
@@ -47,8 +48,8 @@ const handlePurveywms=()=>{
     <div>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
-    <h1 className="gradient-text">Maximize Efficiency with Expert Deconsolidation Solutions
-    <br /></h1>
+    <h2 className="gradient-text">Maximize Efficiency with Expert Deconsolidation 
+    <br /></h2>
     {/* <h3 className="gradient-text">Across All Touchpoints.</h3> */}
 
     <div className='aboutpage-subtitle'>
@@ -112,7 +113,7 @@ const handlePurveywms=()=>{
 
 
 
-   <div className='firstdiv-multichannelintegration ' >
+   {/* <div className='firstdiv-multichannelintegration ' >
     <div className='multichannelintegration-image'>
         <img src={multichannelintegration} alt="" />
     </div>
@@ -123,9 +124,18 @@ const handlePurveywms=()=>{
           </h4>Purvey WMS's Deconsolidation Module, is an essential component of our advanced Warehouse Management System. Designed to streamline the process of breaking down consolidated shipments, our module enables efficient sorting, labelling, and allocation of individual items or smaller units. With Purvey WMS, you can optimize your deconsolidation operations, reduce processing time, and ensure accurate distribution to their respective destinations or storage locations. <br />
           Purvey WMS simplifies the unpacking and unloading process of consolidated shipments. The software provides clear guidance to warehouse staff, ensuring that items are efficiently unpacked and ready for further processing.
           </p></div>
+   </div> */}
+
+<div className='firstdiv-multichannelintegration ' >
+    <div className='multichannelintegration-image wrapper'>
+        <img src={multichannelintegration} alt="" className='image--cover'/>
+    </div>
+    <div className='multichannelintegration-content'>
+      <h2 >Deconsolidation</h2>
+        <p style={{textAlign:"justify",padding:"40px"}}>Purvey WMS's Deconsolidation Module, is an essential component of our advanced Warehouse Management System. Designed to streamline the process of breaking down consolidated shipments, our module enables efficient sorting, labelling, and allocation of individual items or smaller units. With Purvey WMS, you can optimize your deconsolidation operations, reduce processing time, and ensure accurate distribution to their respective destinations or storage locations. <br />
+        Purvey WMS simplifies the unpacking and unloading process of consolidated shipments. The software provides clear guidance to warehouse staff, ensuring that items are efficiently unpacked and ready for further processing.</p>
+    </div>
    </div>
-
-
 
 
 
@@ -139,49 +149,33 @@ const handlePurveywms=()=>{
 <div className='seconddiv-multichannelintegration'>
     <h1>Features</h1>
 </div>
-<Container fluid>
+<Container  className='seconddiv-orderprocessing-container'>
  
 
-    <div className='valuedelivered-maindiv-purveydeconsolidation'>
-  <div className='valuedelivered-firstdiv-purveydeconsolidation'>
-    <img src={improveresouceutilisation} alt="" />
-    <h6>Sorting and Allocating Individual Items</h6>
-    <p >Our Deconsolidation Module helps in sorting and allocating individual items based on predefined rules or specific criteria such as SKU, destination, or order number. This ensures accurate placement of items for seamless distribution or storage.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-purveydeconsolidation'>
-    <img src={efficiency} alt="" />
-    <h6>Hybrid Web and Mobile App Solutions </h6>
-    <p>The PURVEY WMS cross-docking function provides real-time visibility into the status of all cross-docked orders. This allows businesses to track shipments, monitor progress, and receive instant notifications on order fulfilment milestones.
+    <div className='valuedelivered-maindiv-orderprocessing' >
 
-</p>
+  <div className='valuedelivered-firstdiv-orderprocessing'>
+    <img src={improveresouceutilisation} alt="" />
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
   </div>
-  <div className='valuedelivered-thirddiv-purveydeconsolidation'>
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    <img src={efficiency} alt="" />
+    {/* <h6>Reduced Complexity</h6> */}
+    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
+  </div>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src={improvedorderaccuracy} alt="" />
-    <h6>Built in Quality control </h6>
-    <p>The PURVEY WMS cross-docking function includes built-in quality control checks to ensure accuracy and integrity of the goods being processed. Any discrepancies or issues are immediately flagged for resolution, reducing the risk of errors and customer dissatisfaction</p>
+    {/* <h6>Increased Productivity</h6> */}
+    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
   </div>
-
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src={improvedorderaccuracy} alt="" />
+    {/* <h6>Improved Resource Utilization</h6> */}
+    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
+  </div>
 </div>
-<div className='valuedelivered-maindiv-purveydeconsolidation'>
-  <div className='valuedelivered-firstdiv-purveydeconsolidation'>
-    <img src={improveresouceutilisation} alt="" />
-    <h6>Sorting and Allocating Individual Items</h6>
-    <p >Our Deconsolidation Module helps in sorting and allocating individual items based on predefined rules or specific criteria such as SKU, destination, or order number. This ensures accurate placement of items for seamless distribution or storage.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-purveydeconsolidation'>
-    <img src={efficiency} alt="" />
-    <h6>Hybrid Web and Mobile App Solutions </h6>
-    <p>The PURVEY WMS cross-docking function provides real-time visibility into the status of all cross-docked orders. This allows businesses to track shipments, monitor progress, and receive instant notifications on order fulfilment milestones.
-
-</p>
-  </div>
- 
-
-</div>
-<br />
-
 </Container>
-
 
 
 <Container>
@@ -255,7 +249,7 @@ const handlePurveywms=()=>{
 </div>
   </div>
 
-
+<Footer/>
     </div>
   )
 }

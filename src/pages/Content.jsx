@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import {Row,Col ,Container} from 'react-bootstrap'
 import { Helmet } from 'react-helmet'; // Import Helmet
-
+import Footer from '../components/Footer'
 import './newdesigndemo.css'
 import Deconsolidation from './Deconsolidation'
 import AporaHomepage from './AporaHomepage'
@@ -60,7 +60,7 @@ function Content() {
   useEffect(() => {
     const interval = setInterval(() => {
       setContentIndex((prevIndex) => (prevIndex + 1) % contentData.length);
-    }, 4000); // Time between content change
+    }, 3000); // Time between content change
 
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, [contentData.length]);
@@ -130,7 +130,9 @@ function Content() {
     <Deconsolidation/>
     <AporaHomepage/>
     <IndustriesServe/>
-
+{/* <div className='res-footer'>
+<Footer/>
+</div> */}
     </div>
   )
 }

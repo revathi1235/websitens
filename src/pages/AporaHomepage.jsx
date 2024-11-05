@@ -6,25 +6,23 @@ import {Row,Col, Container} from 'react-bootstrap'
 const data = {
     'Put Away': {
       items: [
-        { name: 'Put Away List Generation', image: './Assets/work3.jpg' },
-        { name: 'Dynamic Storage Optimization', image: './Assets/eco.jpg' },
-        { name: 'Resource Optimization', image: './Assets/work4.jpg' },
-        { name: 'For Process Control and Monitoring', image: './Assets/eco.webp' },
+        { name: 'Put Away List Generation', image: './Assets/work3.jpg',description:'Optimize your warehouse space through effective put away list generation' },
+        { name: 'Dynamic Storage Optimization', image: './Assets/eco.jpg' ,description:'Elevate your inventory management with cutting-edge dynamic storage optimization.'},
+        { name: 'Resource Optimization', image: './Assets/work4.jpg' ,description:"Unlock your potential by optimizing resources for smarter operations"},
+        { name: 'For Process Control and Monitoring', image: './Assets/eco.webp' ,description:'Transform your workflow with precise process control and continuous monitoring.'},
         ],
     },
     'Pick & Dispatch': {
       items: [
-        { name: 'Sales Order Similarity & Proximity based grouping', image: './Assets/work4.jpg' },
-        { name: 'Zone aligned Pick List generation', image: './Assets/work2.jpg' },
-        { name: 'Resource Optimization ', image: './Assets/work3.jpg' },
-        { name: 'For Process control and Monitoring', image: './Assets/work4.jpg' },
-        ],
+        { name: 'Sales Order Similarity & Proximity based grouping', image: './Assets/work4.jpg' ,description:"Boost productivity with proximity-based grouping of sales orders"},
+        { name: 'Zone aligned Pick List generation', image: './Assets/work2.jpg',description:"Zone-aligned pick list generation: the key to streamlined order fulfillment." },
+       ],
     },
     'Resource Optimization': {
       items: [
-        { name: 'Put Away Activity Summary', image: './Assets/work3.jpg' },
-        { name: 'Worker Performance Analysis', image: './Assets/work2.jpg' },
-        { name: 'Cost Analysis', image: './Assets/work3.jpg' },
+        { name: 'Put Away Activity Summary', image: './Assets/work3.jpg',description:'' },
+        { name: 'Worker Performance Analysis', image: './Assets/work2.jpg' ,description:""},
+        { name: 'Cost Analysis', image: './Assets/work3.jpg',description:"" },
        ],
     },
     'Trace': {
@@ -77,7 +75,7 @@ const data = {
       </Container>
        <h1 className='headingStyle-Apora'>APORA </h1>
      
-            <div >
+            <div className='mt-4'>
                 {/* Main Headers */}
                 <ul className="responsive-list">
         {Object.keys(data).map((header) => (
@@ -93,19 +91,19 @@ const data = {
             </div>
 
             {/* List of Items based on Selected Header */}
-            <div className='backgroundimg-apora'>
+            <div className='backgroundimg-deconsolidation'>
             <Container  >
                 <Row>
                     
                     <Col lg={6}>
                         {selectedHeader && (
                             <div>
-                                <ul className="block-list mt-2">
+                                <ul className="block-list-deconsolidation  mt-2">
                                     {items.map((item) => (
                                         <li
                                             key={item.name}
                                             onClick={() => handleItemClick(item)}
-                                            className={selectedItem?.name === item.name ? 'selected-item' : ''}
+                                            className={selectedItem?.name === item.name ? 'selected-item-deconsolidation' : ''}
                                         >
                                             {item.name}
                                         </li>
@@ -120,11 +118,11 @@ const data = {
                     <img
                         src={selectedItem.image}
                         alt={selectedItem.name}
-                       className='aporahomepage-image'
+                       className='deconsolidation-img'
                     />
-                    <p style={{ marginTop: '20px', fontSize: '1.2em' }}>
-                        {selectedItem.description}
-                    </p>
+                     <p className='ms-4' style={{ marginTop: '1px', fontSize: '1em',textAlign:"center" }}>
+        {selectedItem.description}
+    </p>
                 </div>
             )}
         </Col>

@@ -16,6 +16,7 @@ import orderprocessing from '../Assets/orderprocessing.svg'
 import './Responsive.css'
 import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
@@ -189,52 +190,59 @@ function Pickandshipping    () {
 
 
 
-   <div className='container mt-5'>
-      <div className='d-flex justify-content-center'>
-        <h2 className='gradient-text'>Features</h2>
-      </div>
-      <div className='row justify-content-center '>
-        {/* Card 1 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Order Package <br />Tracking</h5>
+   <div className="container mt-5 valuedelivered-workforcemanagement">
+        <div className="d-flex justify-content-center">
+          <h2 className="gradient-text">Features</h2>
+        </div>
+        <div className="row justify-content-center ">
+          {/* Card 1 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Enhanced Efficiency</h5>
             <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
-            <div className='bio-pickandshipping'>
-              <p>Within the realm of zone-based picking processes, a practice requires the creation of multiple packages for a single order. The system diligently identifies each of these packages that are destined to arrive at the packing station, taking into account all items contained within the orders. By meticulously considering the composition of these packages, the system accurately determines the total volume of items that collectively form the entirety of the order.</p>
-            </div>
-          </div>
-        </div>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>AI-powered package optimization automates the process of determining the most suitable packaging options for orders. By analysing order dimensions, weights, and other relevant factors, the system intelligently determines the optimal packaging size and arrangement. This automation streamlines the packaging process, reduces wasted space, and improves overall efficiency.
 
-        {/* Card 2 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Intelligent Packaging Sizing Algorithms</h5>
-            <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Inventory Management' />
-            </div>
-            <div className='bio-pickandshipping'>
-              <p>The AI-powered package optimization system utilizes advanced algorithms to analyse order dimensions and packaging constraints. By considering these factors, the system generates optimized packaging solutions that maximize space utilization and minimize material wastage. This intelligent approach results in efficient packaging configurations.</p>
+</p>
             </div>
           </div>
-        </div>
+          </div>
 
-        {/* Card 3 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Real Time Packaging Recommendations</h5>
+          {/* Card 2 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Cost Savings
+
+</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Real-Time Analytics' />
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
-            <div className='bio-pickandshipping'>
-              <p>The system provides real-time recommendations to warehouse staff on the most suitable packaging options for each order. It considers variables such as fragility, weight, and compatibility to ensure that items are packaged securely and efficiently. These recommendations guide warehouse staff in making informed packaging decisions.</p>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14 px"}}>Inefficient packaging practices can result in unnecessary material usage and increased shipping costs. AI-powered package optimization minimizes wastage by precisely calculating the dimensions and weight requirements for each order. By optimizing packaging size, businesses can reduce the need for excessive packaging materials and potentially save on shipping costs.
+
+</p>
             </div>
           </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Improved Sustainability</h5>
+            <div className='image-crop-orderprocessing'>
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+            </div>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>With the growing focus on environmental sustainability, businesses are increasingly seeking ways to reduce their carbon footprint. AI-powered package optimization plays a vital role in this effort by reducing material waste and optimizing the use of packaging resources. By adopting sustainable packaging practices, organizations can enhance their brand image and contribute to a greener future.
+
+</p>
+            </div>
+          </div>
+          </div>
         </div>
-        
       </div>
-    </div>
 
 
 
@@ -268,7 +276,9 @@ function Pickandshipping    () {
 
 
 
-
+<div className='resp-footer'>
+  <Footer/>
+</div>
 
 
 

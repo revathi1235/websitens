@@ -7,6 +7,7 @@ import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
+import Footer from '../components/Footer'
 
 function APIintegration() {
   const navigate=useNavigate()
@@ -47,9 +48,9 @@ const handlePurveywms=()=>{
     <div>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
-    <h1 className="gradient-text">Seamless API Integration for 
+    <h1 className="gradient-text mt-3">Seamless API Integration for 
 
-    <br /></h1>
+    </h1>
     <h3 className="gradient-text">Enhanced Connectivity and Performance</h3>
 
     <div className='aboutpage-subtitle'>
@@ -113,7 +114,7 @@ const handlePurveywms=()=>{
 
 
 
-   <div className='firstdiv-multichannelintegration ' >
+   {/* <div className='firstdiv-multichannelintegration ' >
     <div className='multichannelintegration-image'>
         <img src={multichannelintegration} alt="" />
     </div>
@@ -125,9 +126,17 @@ const handlePurveywms=()=>{
           Quality Assurance process in our PURVEY Warehouse Management System (WMS) is a fully scalable and customizable function. We understand the critical importance of maintaining high-quality standards and ensuring accuracy in every shipment that leaves your warehouse. With our comprehensive Quality Assurance feature within PURVEY WMS, you can streamline your quality control process, minimize errors, and deliver superior products to your customers.
 PURVEY WMS offers a standardized and configurable Quality Assurance process that aligns with your specific business requirements. You can define and implement consistent quality control procedures across all product categories, ensuring uniformity and adherence to quality standards.
           </p></div>
+   </div> */}
+
+<div className='firstdiv-multichannelintegration ' >
+    <div className='multichannelintegration-image wrapper'>
+        <img src={multichannelintegration} alt="" className='image--cover'/>
+    </div>
+    <div className='multichannelintegration-content'>
+      <h2 >API Integration</h2>
+        <p style={{textAlign:"justify",padding:"40px"}}>As technology continues to evolve, businesses are seeking ways to enhance their operations, improve connectivity, and drive efficiency. API integration in PURVEY WMS allows seamless communication and data exchange between different systems, enabling you to unlock a wide range of benefits.</p>
+    </div>
    </div>
-
-
 
 
 
@@ -141,36 +150,32 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 <div className='seconddiv-multichannelintegration'>
     <h1>Features</h1> 
 </div>
-<Container fluid>
+<Container  className='seconddiv-orderprocessing-container'>
  
 
-    <div className='valuedelivered-maindiv-apiintegration'>
-  <div className='valuedelivered-firstdiv-apiintegration'>
-    <img src={improveresouceutilisation} alt="" />
-    <h6>Sorting and Allocating Individual Items</h6>
-    <p >The Quality Assurance feature allows you to define detailed inspection criteria for each product, including physical attributes, functional tests, packaging checks, and more. This ensures that every item undergoes thorough inspection before it is shipped, guaranteeing the highest quality and customer satisfaction. </p>
-  </div>
-  <div className='valuedelivered-seconddiv-apiintegration'>
-    <img src={efficiency} alt="" />
-    <h6>Real-Time Visibility into the Quality Status </h6>
-    <p>With our PURVEY WMS, you gain real-time visibility into the quality status of your inventory. You can track and monitor quality checkpoints, identify potential issues, and take proactive measures to resolve them, ensuring that only compliant and high-quality products are dispatched.
+    <div className='valuedelivered-maindiv-orderprocessing' >
 
-</p>
-  </div>
-  <div className='valuedelivered-thirddiv-apiintegration'>
-    <img src={improvedorderaccuracy} alt="" />
-    <h6>Generates Automated Quality Alerts </h6>
-    <p>PURVEY WMS generates automated quality alerts whenever a deviation or non-conformance is detected during the inspection process. This enables timely corrective actions, reducing the risk of shipping defective or substandard products and maintaining your reputation for delivering superior quality.</p>
-  </div>
-  <div className='valuedelivered-firstdiv-apiintegration'>
+  <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src={improveresouceutilisation} alt="" />
-    <h6>Seamless Integration</h6>
-    <p >Our Quality Assurance module seamlessly integrates with various testing equipment, such as scales, scanners, and measuring devices. This ensures accurate measurements and efficient data capture during the inspection process, reducing manual errors and improving efficiency. </p>
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
+  </div>
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    <img src={efficiency} alt="" />
+    {/* <h6>Reduced Complexity</h6> */}
+    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
+  </div>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src={improvedorderaccuracy} alt="" />
+    {/* <h6>Increased Productivity</h6> */}
+    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
+  </div>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src={improvedorderaccuracy} alt="" />
+    {/* <h6>Improved Resource Utilization</h6> */}
+    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
   </div>
 </div>
-
-<br />
-
 </Container>
 
 
@@ -247,6 +252,8 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
   </div>
 
 
+
+<Footer/>
     </div>
   )
 }

@@ -76,7 +76,6 @@ function Horizontaltimeline() {
       <section id="process">
         <div className="row">
           <div className="section-heading">
-            {/* <h2 className="text-center orange">Responsive Horizontal Timeline</h2> */}
           </div>
         </div>
         <div className="container-fluid">

@@ -7,6 +7,7 @@ import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
+import Footer from '../components/Footer'
 
 function Pickmanagement() {
   const navigate=useNavigate()
@@ -113,7 +114,7 @@ const handlePurveywms=()=>{
 
 
 
-   <div className='firstdiv-multichannelintegration ' >
+   {/* <div className='firstdiv-multichannelintegration ' >
     <div className='multichannelintegration-image'>
         <img src={multichannelintegration} alt="" />
     </div>
@@ -124,9 +125,18 @@ const handlePurveywms=()=>{
           </h4>
           We have a deep understanding of the challenges faced by warehouses in discrete picking operations.
           Our solutions are designed to address these challenges and deliver measurable results. We stay updated with the latest industry trends and technologies to ensure that our clients receive the most advanced and effective solutions. PURVEY provides an efficient and reliable solutions for discrete picking within warehouse management systems (WMS). Our cutting-edge technology and expertise in this field ensure that your warehouse operations are optimized, resulting in increased productivity and accuracy. we understand the importance of streamlined and error-free picking processes in a warehouse.          </p></div>
+   </div> */}
+
+<div className='firstdiv-multichannelintegration ' >
+    <div className='multichannelintegration-image wrapper'>
+        <img src={multichannelintegration} alt="" className='image--cover'/>
+    </div>
+    <div className='multichannelintegration-content'>
+      <h2 >  DISCRETE PICKING </h2>
+        <p style={{textAlign:"justify",padding:"40px"}}>  We have a deep understanding of the challenges faced by warehouses in discrete picking operations.
+        Our solutions are designed to address these challenges and deliver measurable results. We stay updated with the latest industry trends and technologies to ensure that our clients receive the most advanced and effective solutions. PURVEY provides an efficient and reliable solutions for discrete picking within warehouse management systems (WMS). Our cutting-edge technology and expertise in this field ensure that your warehouse operations are optimized, resulting in increased productivity and accuracy. we understand the importance of streamlined and error-free picking processes in a warehouse.   </p>
+    </div>
    </div>
-
-
 
 
 
@@ -140,32 +150,32 @@ const handlePurveywms=()=>{
 <div className='seconddiv-multichannelintegration'>
     <h1>Features</h1> 
 </div>
-<Container fluid>
+<Container  className='seconddiv-orderprocessing-container'>
  
 
-    <div className='valuedelivered-maindiv-pickmanagement'>
-  <div className='valuedelivered-firstdiv-pickmanagement'>
+    <div className='valuedelivered-maindiv-orderprocessing' >
+
+  <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src={improveresouceutilisation} alt="" />
-    <h6>Advanced Order Allocation</h6>
-    <p >Our discrete picking module in PURVEY incorporates advanced algorithms to intelligently allocate orders to the most suitable pickers. Picklists are generated considering factors such as location, optimized pick sequencing, priority and picker availability. Our system ensures optimal resource utilization and minimizes travel time within the warehouse. This leads to faster order fulfilment and increased operational efficiency.</p>
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
   </div>
-  <div className='valuedelivered-seconddiv-pickmanagement'>
+  <div className='valuedelivered-seconddiv-orderprocessing'>
     <img src={efficiency} alt="" />
-    <h6>Barcode and RFID Integration </h6>
-    <p>To ensure efficient and accurate item identification during the picking process, we seamlessly integrate barcode and RFID technologies into our WMS. These technologies enable real-time inventory visibility, minimize the risk of picking errors, and enhance overall inventory accuracy. With our integrated solutions, you can effectively track and manage your inventory, reducing stockouts and improving order fulfilment rates.
-
-</p>
+    {/* <h6>Reduced Complexity</h6> */}
+    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
   </div>
-  <div className='valuedelivered-thirddiv-pickmanagement'>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src={improvedorderaccuracy} alt="" />
-    <h6>Performance Analytics and Reporting</h6>
-    <p>You can monitor key metrics such as picking rates, accuracy levels, picker efficiency, and order fulfilment times. These insights allow you to identify areas for improvement, optimize processes, and make data-driven decisions to further enhance your warehouse operations. Our dashboards provide valuable visibility into your picking operations, helping you track performance and drive continuous improvement.</p>
+    {/* <h6>Increased Productivity</h6> */}
+    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
   </div>
-
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src={improvedorderaccuracy} alt="" />
+    {/* <h6>Improved Resource Utilization</h6> */}
+    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
+  </div>
 </div>
-
-<br />
-
 </Container>
 
 
@@ -224,7 +234,7 @@ const handlePurveywms=()=>{
 
   </div>
 
-
+<Footer/>
     </div>
   )
 }

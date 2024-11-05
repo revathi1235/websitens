@@ -23,18 +23,18 @@ function Footer() {
                   <div class="footer-widget-heading">
                     <h3>Find Us</h3>
 
-                    <span style={{ color: "black" }}>
-                      <FontAwesomeIcon
-                        icon={faLocationDot}
-                        style={{ color: "black" }}
-                      />{" "}
-                      Malambuzha Rd,
-                      <br />
-                      Olavakkode,
-                      <br />
-                      Palakkad Kerala <br />
-                      678002
-                    </span>
+                      <span style={{ color: "black" }}>
+                        <FontAwesomeIcon
+                          icon={faLocationDot}
+                          style={{ color: "black" }}
+                        />{" "}
+                        Malambuzha Rd,
+                        <br />
+                        Olavakkode,
+                        <br />
+                        Palakkad Kerala <br />
+                        678002
+                      </span>
                   </div>
                 </div>
               </div>

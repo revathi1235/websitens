@@ -4,10 +4,11 @@ import purvey_apora_black from '../Assets/purvey_apora_black.png'
 import Chart2 from './Chart2'
 import multichannelintegration from '../Assets/work3.jpg'
 import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
-import scalabilityandflexibility from '../Assets/scalabilityandflexibility.svg'
+// import scalabilityandflexibility from '../Assets/scalabilityandflexibility.svg'
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
+import Footer from '../components/Footer'
 
 function Crossdocking() {
   const navigate=useNavigate()
@@ -113,7 +114,7 @@ const handlePurveywms=()=>{
 
 
 
-   <div className='firstdiv-multichannelintegration ' >
+   {/* <div className='firstdiv-multichannelintegration ' >
     <div className='multichannelintegration-image'>
         <img src={multichannelintegration} alt="" />
     </div>
@@ -123,8 +124,17 @@ const handlePurveywms=()=>{
           CROSS DOCKING</h4>In today's fast-paced business environment, efficient order fulfilment is critical to success. Customers expect their orders to be processed and delivered quickly and accurately, and businesses that cannot meet these expectations risk losing customers to competitors.
           One way to improve order fulfilment efficiency is to use a cross-docking system. Cross-docking is a process in which incoming goods are sorted and consolidated directly for outbound shipping, without being placed in long-term storage. This can significantly reduce order fulfilment cycle times and improve customer satisfaction.</p>
     </div>
+   </div> */}
+<div className='firstdiv-multichannelintegration ' >
+    <div className='multichannelintegration-image wrapper'>
+        <img src={multichannelintegration} alt="" className='image--cover'/>
+    </div>
+    <div className='multichannelintegration-content'>
+      <h2 >Cross Docking</h2>
+        <p style={{textAlign:"justify",padding:"40px"}}>In today's fast-paced business environment, efficient order fulfilment is critical to success. Customers expect their orders to be processed and delivered quickly and accurately, and businesses that cannot meet these expectations risk losing customers to competitors.
+        One way to improve order fulfilment efficiency is to use a cross-docking system. Cross-docking is a process in which incoming goods are sorted and consolidated directly for outbound shipping, without being placed in long-term storage. This can significantly reduce order fulfilment cycle times and improve customer satisfaction.</p>
+    </div>
    </div>
-
 
 
 
@@ -139,35 +149,32 @@ const handlePurveywms=()=>{
 <div className='seconddiv-multichannelintegration'>
     <h1>Features</h1>
 </div>
-<Container fluid c>
+<Container  className='seconddiv-orderprocessing-container'>
  
 
-    <div className='valuedelivered-maindiv-crossdocking'>
-  <div className='valuedelivered-firstdiv-crossdocking'>
-    <img src={improveresouceutilisation} alt="" />
-    <h6>Automated Processing</h6>
-    <p >The PURVEY WMS cross-docking function automates the entire cross-docking process, from sorting and consolidation to outbound shipping. This eliminates the need for manual intervention, which can significantly reduce processing time.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-crossdocking'>
-    <img src={efficiency} alt="" />
-    <h6>Hybrid Web and Mobile App Solutions </h6>
-    <p>The PURVEY WMS cross-docking function provides real-time visibility into the status of all cross-docked orders. This allows businesses to track shipments, monitor progress, and receive instant notifications on order fulfilment milestones.
+    <div className='valuedelivered-maindiv-orderprocessing' >
 
-</p>
+  <div className='valuedelivered-firstdiv-orderprocessing'>
+    <img src={improveresouceutilisation} alt="" />
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
   </div>
-  <div className='valuedelivered-thirddiv-crossdocking'>
-    <img src={improvedorderaccuracy} alt="" />
-    <h6>Built in Quality control </h6>
-    <p>The PURVEY WMS cross-docking function includes built-in quality control checks to ensure accuracy and integrity of the goods being processed. Any discrepancies or issues are immediately flagged for resolution, reducing the risk of errors and customer dissatisfaction</p>
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    <img src={efficiency} alt="" />
+    {/* <h6>Reduced Complexity</h6> */}
+    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
   </div>
-  <div className='valuedelivered-thirddiv-crossdocking'>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src={improvedorderaccuracy} alt="" />
-    <h6>Data Driven Decision Making </h6>
-    <p>The PURVEY WMS cross-docking function provides businesses with insights into order processing times, dock utilization, carrier performance, and overall efficiency. This information can be used to identify areas for improvement and make data-driven decisions that can help improve order fulfilment efficiency.</p>
+    {/* <h6>Increased Productivity</h6> */}
+    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
+  </div>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src={improvedorderaccuracy} alt="" />
+    {/* <h6>Improved Resource Utilization</h6> */}
+    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
   </div>
 </div>
-<br />
-
 </Container>
 
 
@@ -217,6 +224,9 @@ const handlePurveywms=()=>{
 </div>
   </div>
 
+
+
+<Footer/>
 
     </div>
   )

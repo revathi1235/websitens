@@ -3,7 +3,7 @@ import royalbluebg from '../Assets/royalbluebg.jpg'
 import aporablack from '../Assets/apora_black.png'
 import Card from 'react-bootstrap/Card';
 import { Helmet } from 'react-helmet';
-import scalabilityandflexibility from '../Assets/scalabilityandflexibility.svg'
+// import scalabilityandflexibility from '../Assets/scalabilityandflexibility.svg'
 import Nav from 'react-bootstrap/Nav';
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
@@ -16,6 +16,7 @@ import './Responsive.css'
 import Chart from './Chart'
 import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
@@ -274,7 +275,7 @@ const handleApora=()=>{
 <br />
 <div className='valuedelivered-maindiv-multiintegration mt-5'>
   <div className='valuedelivered-fourthdiv-multiintegration'>
-    <img src={scalabilityandflexibility} alt="" />
+    {/* <img src={scalabilityandflexibility} alt="" /> */}
     <h6>Scalability & Flexibility</h6>
     <p>As your business grows and expands into new sales channels, a multi-channel pick management system can adapt to your evolving needs. It provides the scalability to handle increasing order volumes and the flexibility to incorporate additional channels seamlessly. Whether you sell through online marketplaces, brick-and-mortar stores, or social media platforms, the system can consolidate and manage all orders efficiently.</p>
   </div>
@@ -299,7 +300,9 @@ const handleApora=()=>{
 
 
 
-
+<div className='resp-footer'>
+<Footer/>
+</div>
     </div>
     </>
   )

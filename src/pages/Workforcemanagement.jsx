@@ -10,6 +10,7 @@ import orderprocessing from "../Assets/orderprocessing.svg";
 import Chart from "./Chart";
 import "./Responsive.css";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 const items = [
   {
     id: 1,
@@ -253,95 +254,60 @@ function Workforcemanagement() {
         <div className="row justify-content-center ">
           {/* Card 1 */}
           <div className="col-md-4 col-sm-12 mb-4">
-            <div
-              className="card-workforcemanagement"
-              style={{ background: "white" }}
-            >
-              <h5 style={{color:"white",background:"#303097"}}>
-                Enhanced Efficiency
-              </h5>
-              <div className="image-crop-workforcemanagement">
-                <img
-                  className="avatar-workforcemanagement"
-                  src="../Assets/work2.webp"
-                  alt="Order Analysis"
-                />
-              </div>
-              <div className="bio-workforcemanagement">
-                <p style={{color:"black"}}>
-                  AI-powered workforce optimization leverages advanced
-                  algorithms to intelligently allocate tasks and resources. By
-                  analysing real-time data such as order volumes, item
-                  locations, and employee performance, the system optimizes the
-                  assignment of picking tasks to the workforce. This automation
-                  streamlines the picking process, reduces travel time, and
-                  increases overall efficiency.
-                </p>
-              </div>
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Enhanced Efficiency</h5>
+            <div className='image-crop-orderprocessing'>
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>AI-powered workforce optimization leverages advanced algorithms to intelligently allocate tasks and resources. By analysing real-time data such as order volumes, item locations, and employee performance, the system optimizes the assignment of picking tasks to the workforce. This automation streamlines the picking process, reduces travel time, and increases overall efficiency.</p>
+            </div>
+          </div>
           </div>
 
           {/* Card 2 */}
           <div className="col-md-4 col-sm-12 mb-4">
-            <div
-              className="card-workforcemanagement"
-              style={{ background: "white" }}
-            >
-              <h5 style={{color:"white",background:"#303097"}}>
-                Improved Productivity
-              </h5>
-              <div className="image-crop-workforcemanagement">
-                <img
-                  className="avatar-workforcemanagement"
-                  src="../Assets/work2.webp"
-                  alt="Inventory Management"
-                />
-              </div>
-              <div className="bio-workforcemanagement">
-                <p style={{color:"black"}}>
-                  With AI-powered workforce optimization, organizations can
-                  unlock the full potential of their workforce. The system takes
-                  into account employee skills, experience, and availability to
-                  allocate tasks that align with individual strengths. By
-                  matching the right employees with the right tasks,
-                  productivity is maximized, and employees are empowered to
-                  perform at their best.
-                </p>
-              </div>
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Improved Productivity
+
+</h5>
+            <div className='image-crop-orderprocessing'>
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14 px"}}>With AI-powered workforce optimization, organizations can unlock the full potential of their workforce. The system takes into account employee skills, experience, and availability to allocate tasks that align with individual strengths. By matching the right employees with the right tasks, productivity is maximized, and employees are empowered to perform at their best.</p>
+            </div>
+          </div>
           </div>
 
           {/* Card 3 */}
           <div className="col-md-4 col-sm-12 mb-4">
-            <div
-              className="card-workforcemanagement"
-              style={{ background: "white" }}
-            >
-              <h5 style={{color:"white",background:"#303097"}}>
-                Adaptive Planning
-              </h5>
-              <div className="image-crop-workforcemanagement">
-                <img
-                  className="avatar-workforcemanagement"
-                  src="../Assets/work2.webp"
-                  alt="Real-Time Analytics"
-                />
-              </div>
-              <div className="bio-workforcemanagement">
-                <p style={{color:"black"}}>
-                  The dynamic nature of warehousing requires flexible planning
-                  and resource allocation. AI-powered workforce optimization
-                  adapts to changing circumstances by continuously analysing
-                  data and adjusting workforce assignments accordingly. Whether
-                  it's a sudden increase in order volumes or a change in order
-                  priorities, the system optimizes workforce planning to meet
-                  shifting demands effectively
-                </p>
-              </div>
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Adaptive Planning</h5>
+            <div className='image-crop-orderprocessing'>
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>The dynamic nature of warehousing requires flexible planning and resource allocation. AI-powered workforce optimization adapts to changing circumstances by continuously analysing data and adjusting workforce assignments accordingly. Whether it's a sudden increase in order volumes or a change in order priorities, the system optimizes workforce planning to meet shifting demands effectively
+
+</p>
+            </div>
+          </div>
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+      <Footer/>
     </div>
   );
 }

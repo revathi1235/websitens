@@ -16,6 +16,7 @@ import orderprocessing from '../Assets/orderprocessing.svg'
 import './Responsive.css'
 import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
@@ -187,53 +188,55 @@ const handleApora=()=>{
 
 
 
-
-   <div className='container mt-5'>
-      <div className='d-flex justify-content-center'>
-        <h2 className='gradient-text'>Features</h2>
-      </div>
-      <div className='row justify-content-center '>
-        {/* Card 1 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Intelligent Order Analysis</h5>
+   <div className="container mt-5 valuedelivered-workforcemanagement">
+        <div className="d-flex justify-content-center">
+          <h2 className="gradient-text">Features</h2>
+        </div>
+        <div className="row justify-content-center ">
+          {/* Card 1 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Intelligent Order Varification</h5>
             <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
-            <div className='bio-orderprocessing'>
-              <p>The AI-powered order synchronization system utilizes advanced algorithms to analyse order similarities and content item proximities within the warehouse. By understanding the relationships between orders and item locations, the system intelligently synchronizes orders to minimize the number of picklists required.</p>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>The AI-powered fulfilment validation system intelligently verifies order details, such as items ordered and quantities. The process in available throughout the order picking zone level packing and shipping stages. It compares this information with the actual picked items, ensuring accuracy and completeness. Any discrepancies or mismatches are flagged for review, enabling prompt resolution.</p>
             </div>
           </div>
-        </div>
+          </div>
 
-        {/* Card 2 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Real-Time Data Integration</h5>
-            <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Inventory Management' />
-            </div>
-            <div className='bio-orderprocessing'>
-              <p>The system seamlessly integrates with existing warehouse management systems, to receive real-time data on order details, item locations, and availability. This integration ensures accurate and up-to-date information, enabling the system to make informed decisions for order synchronization.</p>
-            </div>
-          </div>
-        </div>
+          {/* Card 2 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Automated Item Inspection
 
-        {/* Card 3 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"green"}}>
-            <h5 style={{color:"white",background:"blue"}}>Customizable Synchronization Rules</h5>
+</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Real-Time Analytics' />
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
-            <div className='bio-orderprocessing'>
-              <p>The AI-powered order synchronization system considers criteria such as item similarity, item proximity, or order priorities to tailor the synchronization process to their unique needs.</p>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14 px"}}>The system automates the inspection process by leveraging Bar code/ QR code or RFID systems that keep track of item attributes and specifications at each stage of the warehouse activity. It verifies the quantity and packaging of each item, minimizing the risk of shipping damaged or incorrect products.</p>
             </div>
           </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="col-md-4 col-sm-12 mb-4">
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Packaging and Labelling Compailance</h5>
+            <div className='image-crop-orderprocessing'>
+              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+            </div>
+            <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"14px"}}>AI-powered fulfilment validation automatically generates the packaging and labelling to meet the required standards. The system verifies that the items transferred to shipping boxes are in conformance with the related customer orders. It also confirms that the labels contain accurate customer information, shipping details, and other information.
+
+</p>
+            </div>
+          </div>
+          </div>
         </div>
-        
       </div>
-    </div>
 
 
 
@@ -259,11 +262,7 @@ const handleApora=()=>{
     {/* <h6>Improved Order Accuracy</h6> */}
     <p><b>Real-time Error Detection</b> is a key feature of the AI-powered fulfillment validation system, which continuously analyzes data such as order details, item specifications, and packaging requirements. It detects errors or discrepancies in real-time and alerts warehouse staff, enabling them to quickly rectify issues before the order is shipped. This proactive approach minimizes delays, reduces the likelihood of customer complaints, and improves overall operational efficiency.</p>
   </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    <h6>Improved Order Accuracy</h6>
-    <p>AI-powered order synchronization takes into account the proximity of items within the warehouse. By synchronizing orders with similar item locations, the system optimizes the allocation of resources. Warehouse staff can efficiently navigate the warehouse, minimizing travel time and maximizing resource utilization. This optimization results in a more efficient use of labour and equipment, leading to cost savings.</p>
-  </div>
+ 
 </div>
 </Container>
 
@@ -273,7 +272,9 @@ const handleApora=()=>{
 
 
 
-
+<div className='resp-footer'>
+  <Footer/>
+</div>
 
     </div>
   )

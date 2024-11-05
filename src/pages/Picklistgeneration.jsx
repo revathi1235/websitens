@@ -18,6 +18,7 @@ import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from 'aos'; // Import AOS library
+import Footer from '../components/Footer';
 
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
@@ -284,7 +285,9 @@ const handleApora=()=>{
 
 
 
-
+<div className='resp-footer'>
+<Footer/>
+</div>
 
     </div>
   )

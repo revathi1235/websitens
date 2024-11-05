@@ -3,6 +3,7 @@
     import { Container, Row ,Col} from 'react-bootstrap'
     import { Helmet } from 'react-helmet';
     import './Responsive.css'
+import Footer from '../components/Footer';
     function AboutUs() {
     return (
         <div>
@@ -70,7 +71,7 @@
         </Row>
     </Container>
 
-
+<Footer/>
             </div>
     )
     }

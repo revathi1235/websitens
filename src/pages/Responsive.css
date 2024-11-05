@@ -1,5 +1,10 @@
 @media(max-width:768px){
-    
+    .res-footer{
+      margin-top: 800px;
+    }
+    .resp-footer{
+      margin-top: 20px;
+    }
 }
 
 @media(max-width:375px){
@@ -876,6 +881,7 @@ margin-top: -30px;
 
 
 @media (max-width: 768px) {
+  
   .valuedelivered-maindiv-multiintegration {
       flex-direction: column; /* Stack items vertically on mobile */
       align-items: stretch;   /* Stretch to full width */
@@ -897,7 +903,7 @@ margin-top: -30px;
       padding: 10px;         /* Reduce padding for smaller screens */
       flex-direction: column; /* Stack image and text vertically on mobile */
       align-items: center;     /* Center items in the column layout */
-      height: 60vh;           /* Allow content to dictate height */
+      height: 75vh;           /* Allow content to dictate height */
   }
 
   .valuedelivered-firstdiv-multiintegration img,
@@ -951,4 +957,142 @@ margin-top: -30px;
      width: 30%;     width: 300px;
      margin-left: 15px;              /* Full width to allow centering */
  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------servicepage------------------------------ */
+
+@media (min-width: 1200px) {
+  .btn-grp-servicepage {
+    flex-direction: row; /* Keeps buttons in a single row on large screens */
+    justify-content: center;
+  }
+}
+
+/* For medium desktops and laptops (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .btn-grp-servicepage {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .service-button {
+    font-size: 0.9rem; /* Slightly smaller font */
+    padding: 2px 1px; /* Slightly smaller padding */
+  }
+}
+
+/* For tablets (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .btn-grp-servicepage {
+    flex-direction: row;
+    gap: 3px;
+  }
+  .service-button {
+    font-size: 0.85rem;
+    padding: 4px 1px;
+  }
+}
+
+/* For small tablets and large phones (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .btn-grp-servicepage {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .service-button {
+    width: 40%; /* Makes buttons occupy about half-width each */
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+}
+
+/* For smaller phones (up to 575px) */
+@media (max-width: 575px) {
+  .btn-grp-servicepage {
+    flex-direction: column; /* Stacks buttons vertically */
+    align-items: center;
+    gap: 5px;
+  }
+  .service-button {
+    width:100%; /* Takes up most of the screen width */
+    font-size: 0.6rem;
+    gap: 2px;
+    padding: 2px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .steps-timeline {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 15px;
+      padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-timeline {
+      grid-template-columns: 1fr; /* Stack each step on top of each other */
+      gap: 20px;
+  }
+
+  .steps-one, .steps-two, .steps-three, .steps-four {
+      width: 100%;
+      align-items: flex-start;
+  }
+
+  .verticle-line {
+      width: 100%;
+      height: 5px;
+      margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #process {
+      padding: 10px;
+  }
+
+  .steps-timeline {
+      gap: 10px;
+      padding: 10px 5px;
+  }
+
+  .step-wrap {
+      height: 40px;
+      width: 40px;
+  }
+
+  .steps-stops {
+      height: 20px;
+      width: 20px;
+  }
+
+  .verticle-line {
+      width: 80px;
+  }
 }

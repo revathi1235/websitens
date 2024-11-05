@@ -48,8 +48,8 @@ function CollapsibleExample() {
     sticky="top"
   >
     <Container>
-      <Navbar.Brand href="/">
-        <img
+      <Navbar.Brand >
+        <img  onClick={() => { handleHome(); handleLinkClick(); }} style={{cursor:"pointer"}}
           src="./Assets/ns black transparent.png"
           width="100"
           height="50"
@@ -59,7 +59,7 @@ function CollapsibleExample() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/" onClick={() => { handleHome(); handleLinkClick(); }}>
+          <Nav.Link  onClick={() => { handleHome(); handleLinkClick(); }}>
             Home
           </Nav.Link>
           <Nav.Link onClick={() => { handleAboutus(); handleLinkClick(); }}>
@@ -67,25 +67,34 @@ function CollapsibleExample() {
           </Nav.Link>
           <NavDropdown title="Warehouse Management" id="nav-dropdown">
             <NavDropdown.Item
-              className="fix-dropdown-height"
+              
               eventKey="4.1"
               onClick={() => { handleAporaFulfillmentautomation(); handleLinkClick(); }}
             >
-              APORA Fulfillment Automation
+              APORA Omni Channel Fulfillment Automation
             </NavDropdown.Item>
-            {/* <NavDropdown.Item
-              className="fix-dropdown-height"
-              eventKey="4.2"
-             
-            >
-              PURVEY Order Management System
-            </NavDropdown.Item> */}
+           
             <NavDropdown.Item
-              className="fix-dropdown-height"
+              
               eventKey="4.3"
               onClick={() => { handlePurveywarehousemanagement(); handleLinkClick(); }}
             >
-              PURVEY Warehouse Management System
+              PURVEY 3PL Warehouse Management System
+            </NavDropdown.Item>
+            
+            <NavDropdown.Item
+             
+              eventKey="4.2"
+             
+            >
+             Last Mile Delivery
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              
+              eventKey="4.3"
+              onClick={() => { handlePurveywarehousemanagement(); handleLinkClick(); }}
+            >
+             Yard Management
             </NavDropdown.Item>
           </NavDropdown>
           <Nav.Link onClick={() => { handleServices(); handleLinkClick(); }}>
