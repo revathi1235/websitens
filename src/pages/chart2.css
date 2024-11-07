@@ -158,46 +158,8 @@
   
   /* MQ STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media screen and (max-width: 700px) {
-    .rectangle {
-      padding: 20px 10px;
-    }
-  
-    .level-1,
-    .level-2 {
-      width: 100%;
-    }
-  
-    .level-1 {
-      margin-bottom: 2px;
-    }
-  
-    .level-1::before,
-    .level-2-wrapper > li::before {
-      display: none;
-    }
-    
-    .level-2-wrapper,
-    .level-2-wrapper::after,
-    .level-2::after {
-      display: block;
-    }
-  
-    .level-2-wrapper {
-      width: 90%;
-      margin-left: 10%;
-    }
-  
-    .level-2-wrapper::before {
-      left: -20px;
-      width: 2px;
-      height: calc(100% + 40px);
-    }
-  
-    .level-2-wrapper > li:not(:first-child) {
-      margin-top: 50px;
-    }
-  }
+ /* MQ STYLES
+
   
   
   /* FOOTER
@@ -215,3 +177,43 @@
     margin-left: 4px;
   }
   
+
+
+  /* Default to show desktop view and hide mobile view */
+.desktop-chart {
+  display: block;
+}
+
+.mobile-chart {
+  display: none;
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .desktop-chart {
+    display: none;
+  }
+
+  .mobile-chart {
+    display: block;
+  }
+
+  .mobile-chart .level-12 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .mobile-chart .level-22-wrapper {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mobile-chart .level-22-wrapper li {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+}

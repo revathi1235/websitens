@@ -86,7 +86,21 @@ const handlePurveywms=()=>{
   </ol>
 </div>
 
-
+<div className="container-chart2 mobile-chart">
+        <h1 className="level-12 rectangle">Purvey</h1>
+        <ul className="level-22-wrapper">
+          <li>Inbound Receipt</li>
+          <li>Cross Docking</li>
+          <li>Deconsolidation</li>
+          <li>Quality Check</li>
+          <li>Repacking and Putaway</li>
+          <li>Pick Management</li>
+          <li>Dispatch</li>
+          <li>Inventory Management</li>
+          <li>API Integration</li>
+          <li>IOT Integration</li>
+        </ul>
+      </div>
     </div>
   )
 }

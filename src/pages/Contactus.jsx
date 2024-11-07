@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMailBulk, faPhone,faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer';
+import Demo from './Demo';
 function Contactus() {
   return (
     <div className='contact-section mt-2'>
@@ -116,7 +117,7 @@ function Contactus() {
       </div>
     </div>
   </section>
-
+<Demo/>
 
   <Footer/>
     </div>

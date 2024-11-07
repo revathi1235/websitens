@@ -181,7 +181,21 @@
         margin-left: auto; /* Centering for smaller screens */
         margin-right: auto; /* Centering for smaller screens */
     }
- 
+    .level-1::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 59%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 20px;
+      background: var(--black);
+  }
+  .level-2-wrapper::before {
+    
+     width: 0%; 
+
+}
     .level-2-wrapper {
         flex-direction: column; /* Stack items vertically on mobile */
         align-items: center; /* Center items horizontally */

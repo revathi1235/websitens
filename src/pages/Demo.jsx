@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './chart2.css'
 import {Row,Col, Container} from 'react-bootstrap'
 // Sample data for headers and corresponding items with images
 const data = {
@@ -91,7 +91,7 @@ const data = {
       },    
   };
   
-  const HeaderComponent = () => {
+  const Demo = () => {
     const [selectedHeader, setSelectedHeader] = useState('Yard Management');
     const [items, setItems] = useState([]);
     const [selectedItem, setSelectedItem] = useState(null);
@@ -110,25 +110,9 @@ const data = {
     setSelectedItem(item); // Set the selected item when clicked
   };
 
-  ;
   return (
     <div>
-
-      <Container>
-      <p className='font-highlight-deconsol mt-5'> Revolutionize your warehouse operations with our AI-driven software designed for optimal warehouse management solutions.</p>  
-      <br />
-    
-      <div style={{display:"flex",justifyContent:"center"}}>
-     
-     <p   className='deconsolidation-paragraph'>
-     Our innovative  enhances efficiency by enabling the seamless management of your inventory and logistics, ensuring that every product is tracked in real-time. Experience lightning-speed fulfillment that significantly boosts customer satisfaction. With intelligent automation features and smart analytics, our WMS solution  streamlines your operations, reduces costs, and maximizes productivity. Transform the way you manage your warehouse and take your logistics to the next level with our cutting-edge technology.
-     </p>
-     <div style={{height:'30vh'}}></div>
-      </div>
-      </Container>
-       <h1 className='headingStyle'>Purvey - WMS</h1>
-     
-            <div className='mt-4'>
+         <div className='mt-4'>
                 {/* Main Headers */}
                 <ul className="responsive-list">
         {Object.keys(data).map((header) => (
@@ -142,10 +126,8 @@ const data = {
         ))}
       </ul>
             </div>
-
-            {/* List of Items based on Selected Header */}
-            <div className='backgroundimg-deconsolidation'>
-    <Container>
+      <div className='dummy-bg'>
+      <Container>
         <Row>
             <Col lg={6} md={12}>
 
@@ -187,10 +169,84 @@ const data = {
             </Col>
         </Row>  
     </Container>
-</div>
-   
-    </div>
-  );
-};
+      </div>
 
-export default HeaderComponent;
+
+
+
+      <div>
+      {/* Desktop layout */}
+      <div className="container-chart desktop-chart">
+        <h1 className="level-1 rectangle" >APORA</h1>
+        <ol className="level-2-wrapper">
+          <li><h6 className="level-2 rectangle" >Multi-Channel Integration</h6></li>
+          <li><h6 className="level-2 rectangle" >Order Processing</h6></li>
+          <li><h6 className="level-2 rectangle" >Pick List Generation</h6></li>
+          <li><h6 className="level-2 rectangle" >Work Force Management</h6></li>
+          <li><h6 className="level-2 rectangle" >Pick Sequencing</h6></li>
+          <li><h6 className="level-2 rectangle" >Package & Shipping</h6></li>
+          <li><h6 className="level-2 rectangle" >Fulfillment Validation</h6></li>
+          <li><h6 className="level-2 rectangle" >E-Commerce Integration</h6></li>
+        </ol>
+      </div>
+
+      {/* Mobile layout */}
+      <div className="container-chart mobile-chart">
+        <h1 className="level-1 rectangle">APORA</h1>
+        <ul className="level-2-wrapper">
+          <li>Multi-Channel Integration</li>
+          <li>Order Processing</li>
+          <li>Pick List Generation</li>
+          <li>Work Force Management</li>
+          <li>Pick Sequencing</li>
+          <li>Package & Shipping</li>
+          <li>Fulfillment Validation</li>
+          <li>E-Commerce Integration</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <div>
+      {/* Desktop layout */}
+      <div className="container-chart2 desktop-chart">
+        <h1 className="level-12 rectangle">Purvey</h1>
+        <ol className="level-22-wrapper">
+          <li><h6 className="level-22 rectangle2">Inbound Receipt</h6></li>
+          <li><h6 className="level-22 rectangle2">Cross Docking</h6></li>
+          <li><h6 className="level-22 rectangle2 me-2">Deconsolidation</h6></li>
+          <li><h6 className="level-22 rectangle2">Quality Check</h6></li>
+          <li><h6 className="level-22 rectangle2">Repacking and Putaway</h6></li>
+          <li><h6 className="level-22 rectangle2">Pick Management</h6></li>
+          <li><h6 className="level-22 rectangle2 me-2">Dispatch</h6></li>
+          <li><h6 className="level-22 rectangle2">Inventory Management</h6></li>
+          <li><h6 className="level-22 rectangle2">API Integration</h6></li>
+          <li><h6 className="level-22 rectangle2">IOT Integration</h6></li>
+        </ol>
+      </div>
+
+      {/* Mobile layout */}
+      <div className="container-chart2 mobile-chart">
+        <h1 className="level-12 rectangle">Purvey</h1>
+        <ul className="level-22-wrapper">
+          <li>Inbound Receipt</li>
+          <li>Cross Docking</li>
+          <li>Deconsolidation</li>
+          <li>Quality Check</li>
+          <li>Repacking and Putaway</li>
+          <li>Pick Management</li>
+          <li>Dispatch</li>
+          <li>Inventory Management</li>
+          <li>API Integration</li>
+          <li>IOT Integration</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  )
+}
+
+export default Demo
